@@ -1,0 +1,13 @@
+/saves
+/logs
+/crash-reports
+/.vscode
+/mods
+.curseclient
+usercache
+usernamecache
+minecraftinstance.json
+options.txt
+usercache.json
+usernamecache.json
+user-prefs.json
