@@ -1,4 +1,6 @@
 {
+  "balm:jade": null,
+  "gravestone:grave": null,
   "jade:block_face": null,
   "jade:distance": null,
   "jade:mod_name": null,
@@ -44,5 +46,7 @@
   "minecraft:total_enchantment_power": null,
   "minecraft:villager_profession": null,
   "minecraft:waxed": null,
-  "minecraft:zombie_villager": null
+  "minecraft:zombie_villager": null,
+  "theurgy:mercury_flux": null,
+  "waystones:waystone": null
 }

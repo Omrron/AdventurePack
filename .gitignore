@@ -6,7 +6,6 @@
 .curseclient
 usercache
 usernamecache
-minecraftinstance.json
 options.txt
 usercache.json
 usernamecache.json

@@ -1,0 +1,11 @@
+#Changes who stages are granted to when using the gamestages api
+#Changes who's stages are removed when using the gamestages api
+#Allowed Values: PLAYER, TEAM, BOTH
+change = "PLAYER"
+#Changes who's stages are checked when using the gamestages api
+#Allowed Values: PLAYER, TEAM, BOTH
+check = "BOTH"
+#Changes who's stages are listed by the gamestages api
+#Allowed Values: PLAYER, TEAM, BOTH
+list = "BOTH"
+
