@@ -8,6 +8,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["04E5F3F5827166ED"]
 			id: "480B627DC2CBF88B"
 			tasks: [{
 				id: "6A74C83568453E20"
@@ -26,6 +27,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["04E5F3F5827166ED"]
 			id: "47445B095D6EEE95"
 			tasks: [{
 				id: "1B662146341BAB10"
@@ -44,6 +46,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["04E5F3F5827166ED"]
 			id: "47939E19A2EE7416"
 			tasks: [{
 				id: "3A6C7B616C15D682"
@@ -62,6 +65,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["04E5F3F5827166ED"]
 			id: "7085ACC658E41E9B"
 			tasks: [{
 				id: "5D3A89F1D438A0FA"
@@ -148,6 +152,29 @@
 				type: "checkmark"
 			}]
 			x: 0.5d
+			y: -2.5d
+		}
+		{
+			id: "04E5F3F5827166ED"
+			subtitle: "Flick and swish"
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:ritual_table"
+				}
+				id: "4051BC65C407E3AC"
+				observe_type: 0
+				timer: 0L
+				to_observe: "hexalia:ritual_table"
+				type: "observation"
+			}]
+			title: "Create your ritual table"
+			x: -8.0d
 			y: -2.5d
 		}
 	]

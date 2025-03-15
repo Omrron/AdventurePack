@@ -1,5 +1,31 @@
 {
   "bookGuiScale": 0,
   "clickedVisualize": false,
-  "bookData": {}
+  "bookData": {
+    "hexalia:verdant_grimoire": {
+      "viewedEntries": [
+        "hexalia:resources/herbs",
+        "hexalia:world_gen/enchanted_bayou",
+        "hexalia:rituals/ritual_table",
+        "hexalia:items/hex_focus",
+        "hexalia:items/ancient_seed",
+        "hexalia:resources/elemental_nodes",
+        "hexalia:entities/silk_moth",
+        "hexalia:world_gen/trees",
+        "hexalia:equipment/bogged_boots",
+        "hexalia:equipment/sage_pendant",
+        "hexalia:rituals/ritual_of_transmutation",
+        "hexalia:enchanted_plants/lunar_lily",
+        "hexalia:enchanted_plants/windsong",
+        "hexalia:blocks/infused_dirt",
+        "hexalia:blocks/decorative_blocks",
+        "hexalia:items/weather_idols",
+        "hexalia:items/purifying_salts",
+        "hexalia:equipment/rabbage",
+        "hexalia:enchanted_plants/grimshade"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
 }

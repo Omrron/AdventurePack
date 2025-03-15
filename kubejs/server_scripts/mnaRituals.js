@@ -66,5 +66,5 @@ ServerEvents.recipes((event) => {
       "mna:circle",
     ],
     command: '/summon mutantmonsters:mutant_skeleton'
-  });
+  }).id('mna:rituals/summon_mutant_skeleton');
 });
