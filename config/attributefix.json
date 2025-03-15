@@ -330,6 +330,17 @@
         "value": 100
       }
     },
+    "divine_weaponry:zeus_relay": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2,
+        "value": 2
+      }
+    },
     "forge:block_reach": {
       "enabled": false,
       "min": {
@@ -385,6 +396,17 @@
         "value": 1024
       }
     },
+    "divine_weaponry:erebus_flight": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2,
+        "value": 2
+      }
+    },
     "irons_spellbooks:ender_magic_resist": {
       "enabled": false,
       "min": {
@@ -438,6 +460,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "divine_weaponry:erebus_wither_direction": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2,
+        "value": 2
       }
     },
     "irons_spellbooks:lightning_spell_power": {

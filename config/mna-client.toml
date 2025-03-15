@@ -7,7 +7,7 @@
 	#2: UI buttons / right mouse.  Right mouse backs the codex out until the index. Escape closes the codex entirely.
 	#3: UI buttons / escape / right mouse.  Escape or right mouse backs the codex out until the index, then closes it.
 	#Range: 0 ~ 3
-	codexBackStyle = 0
+	codexBackStyle = 2
 
 #Mana and Artifice // HUD Settings
 [ma_hud_settings]
@@ -30,7 +30,7 @@
 	hudPosition = 0
 	#Change the size of pinned recipes.
 	#Range: 1 ~ 3
-	pinnedRecipeSize = 1
+	pinnedRecipeSize = 0
 	#Should affinity render on the HUD?
 	renderAffinityOnHUD = true
 	#Should the runescribing table show the recipe mutex?  This is useful for packmaking if you want to make new runes.

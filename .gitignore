@@ -3,6 +3,7 @@
 /crash-reports
 /.vscode
 /mods
+/modernfix
 .curseclient
 usercache
 usernamecache

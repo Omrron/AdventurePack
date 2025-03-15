@@ -1,0 +1,155 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1_magical_beginnings"
+	group: ""
+	id: "4451E694CDA79657"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "480B627DC2CBF88B"
+			tasks: [{
+				id: "6A74C83568453E20"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:fire_node"
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			id: "47445B095D6EEE95"
+			tasks: [{
+				id: "1B662146341BAB10"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:earth_node"
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			id: "47939E19A2EE7416"
+			tasks: [{
+				id: "3A6C7B616C15D682"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:water_node"
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			id: "7085ACC658E41E9B"
+			tasks: [{
+				id: "5D3A89F1D438A0FA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:air_node"
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7085ACC658E41E9B"
+				"47445B095D6EEE95"
+				"480B627DC2CBF88B"
+				"47939E19A2EE7416"
+				"0BEF6E764E8FB5BE"
+				"1E97514F19481214"
+				"6E5F56AAAE02E781"
+			]
+			id: "78A7AFD85B40012E"
+			shape: "square"
+			tasks: [{
+				entity: "mutantmonsters:mutant_skeleton"
+				id: "2C3EF10B81C6AE63"
+				title: "Slay the Mutant Skeleton"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			id: "1E97514F19481214"
+			tasks: [{
+				id: "7EB3C7FD84B818E2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:wizard_chalk"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			id: "0BEF6E764E8FB5BE"
+			tasks: [{
+				id: "04FE587CAC6C7576"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:purified_vinteum_dust"
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "6E5F56AAAE02E781"
+			tasks: [{
+				id: "6A3F21AB2E5ABD33"
+				title: "gear up!"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+	]
+	title: "Chapter 1: magical beginnings"
+}
