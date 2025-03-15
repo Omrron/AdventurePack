@@ -8,7 +8,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["04E5F3F5827166ED"]
+			dependencies: [
+				"04E5F3F5827166ED"
+				"5D7CCF786458F746"
+			]
 			id: "480B627DC2CBF88B"
 			tasks: [{
 				id: "6A74C83568453E20"
@@ -27,7 +30,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["04E5F3F5827166ED"]
+			dependencies: [
+				"04E5F3F5827166ED"
+				"49CC39C494B73D0C"
+			]
 			id: "47445B095D6EEE95"
 			tasks: [{
 				id: "1B662146341BAB10"
@@ -46,7 +52,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["04E5F3F5827166ED"]
+			dependencies: [
+				"04E5F3F5827166ED"
+				"56A3FA5EB8130874"
+			]
 			id: "47939E19A2EE7416"
 			tasks: [{
 				id: "3A6C7B616C15D682"
@@ -92,7 +101,25 @@
 				"0BEF6E764E8FB5BE"
 				"1E97514F19481214"
 				"6E5F56AAAE02E781"
+				"7095E9B49DAD9941"
 			]
+			description: [
+				"the rite of first ascension is the first set of stairs you must climb to reach enlightenment."
+				""
+				"this ritual will summon a dangerous mutant skeleton from the beyond that you must slay."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mutantmonsters:mutant_skeleton_skull"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "78A7AFD85B40012E"
 			shape: "square"
 			tasks: [{
@@ -102,10 +129,12 @@
 				type: "kill"
 				value: 1L
 			}]
+			title: "the rite of first ascension"
 			x: -2.5d
 			y: -2.5d
 		}
 		{
+			dependencies: ["07FE11B093DBEFFA"]
 			id: "1E97514F19481214"
 			tasks: [{
 				id: "7EB3C7FD84B818E2"
@@ -127,6 +156,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["07FE11B093DBEFFA"]
 			id: "0BEF6E764E8FB5BE"
 			tasks: [{
 				id: "04FE587CAC6C7576"
@@ -145,6 +175,7 @@
 			y: 0.0d
 		}
 		{
+			description: ["the rite of first ascension is quite difficult, we recommend you gear is in order before attempting it"]
 			id: "6E5F56AAAE02E781"
 			tasks: [{
 				id: "6A3F21AB2E5ABD33"
@@ -155,6 +186,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["3891DDECC06761D2"]
 			id: "04E5F3F5827166ED"
 			subtitle: "Flick and swish"
 			tasks: [{
@@ -174,8 +206,300 @@
 				type: "observation"
 			}]
 			title: "Create your ritual table"
-			x: -8.0d
-			y: -2.5d
+			x: -8.5d
+			y: -5.5d
+		}
+		{
+			id: "07FE11B093DBEFFA"
+			tasks: [{
+				count: 16L
+				id: "33708B84DCDBB63E"
+				item: {
+					Count: 16
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:vinteum_dust"
+				}
+				type: "item"
+			}]
+			title: "Welcome to Mana and Artifice"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2131EEED76D1A917"]
+			id: "3891DDECC06761D2"
+			tasks: [{
+				id: "67AA46E0ECAA354D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:hex_focus"
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["29A37A184A4A606C"]
+			id: "2131EEED76D1A917"
+			tasks: [{
+				id: "2E83BEB8BE422773"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:amethyst_shard"
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: -5.5d
+		}
+		{
+			id: "29A37A184A4A606C"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "2574A511A36EA651"
+				item: {
+					Count: 1
+					id: "theurgy:amethyst_divination_rod"
+					tag: {
+						Damage: 0
+						"theurgy:divination.linked_block_id": "minecraft:budding_amethyst"
+						"theurgy:divination.setting.allow_attuning": 0b
+						"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t1_allowed_blocks"
+						"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t1_disallowed_blocks"
+						"theurgy:divination.setting.duration": 40
+						"theurgy:divination.setting.max_damage": 16
+						"theurgy:divination.setting.range": 96
+						"theurgy:divination.setting.tier": "minecraft:stone"
+					}
+				}
+				type: "item"
+			}]
+			title: "Divinning the amethyst"
+			x: -13.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["693322F09812625E"]
+			id: "5D7CCF786458F746"
+			tasks: [{
+				id: "197EC0D98F014F6D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:sunfire_tomato"
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"458E1E5888CB2E9C"
+				"464601CFC657DC27"
+			]
+			id: "56A3FA5EB8130874"
+			tasks: [{
+				id: "6A9820BB9DCF8997"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:siren_paste"
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["168CAF9B0A559E30"]
+			id: "49CC39C494B73D0C"
+			tasks: [{
+				id: "062466A3F3E76363"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:mandrake"
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["795A519CAF070290"]
+			id: "458E1E5888CB2E9C"
+			tasks: [{
+				id: "5221150FDF528C54"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:siren_kelp"
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: -3.0d
+		}
+		{
+			id: "464601CFC657DC27"
+			tasks: [{
+				id: "07FE5CA093E1E798"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:mortar_and_pestle"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			description: ["in case your having a hard time finding hexalia's mystical plants, we added some recipes to help you get started!"]
+			id: "795A519CAF070290"
+			optional: true
+			tasks: [{
+				id: "76D47BC56D88931B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:small_cauldron"
+				}
+				type: "item"
+			}]
+			title: "Brewing Magical Flora"
+			x: -13.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["795A519CAF070290"]
+			id: "693322F09812625E"
+			optional: true
+			progression_mode: "linear"
+			tasks: [{
+				id: "2C8DD502C57A307F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:sunfire_tomato_seeds"
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["795A519CAF070290"]
+			id: "168CAF9B0A559E30"
+			optional: true
+			tasks: [{
+				id: "0AB60ADC333AAA51"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexalia:mandrake_seeds"
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["07FE11B093DBEFFA"]
+			id: "7095E9B49DAD9941"
+			tasks: [{
+				advancement: "mna:tier_1/obtain_manaweaving_altar"
+				criterion: ""
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:manaweaver_wand_advanced"
+				}
+				id: "4BB568E14017E671"
+				type: "advancement"
+			}]
+			title: "the art of manaweaving"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"07FE11B093DBEFFA"
+				"7095E9B49DAD9941"
+			]
+			id: "21A25D61A1BC13DB"
+			optional: true
+			tasks: [{
+				id: "09B898647521ABAB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:manaweaving_altar"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
 		}
 	]
 	title: "Chapter 1: magical beginnings"

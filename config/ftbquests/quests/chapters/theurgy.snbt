@@ -1,0 +1,342 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "theurgy"
+	group: ""
+	id: "3D259F31082A5151"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["79C5DDC4C206B5CC"]
+			description: ["This block is used as the base heat source for all other \"machines\". Place it bellow the acting block and give it some fuel"]
+			id: "38EB488C23BF6F98"
+			subtitle: "Turn up the heat!"
+			tasks: [{
+				id: "3195942301842B1C"
+				item: "theurgy:pyromantic_brazier"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["38EB488C23BF6F98"]
+			description: ["Place a calcination oven over your fire and give it an item. Depending on the item you give you'll get the relevant salt back"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "theurgy:alchemical_salt_mineral"
+			}
+			id: "6251867567F84BE2"
+			subtitle: "King of flavor"
+			tasks: [
+				{
+					id: "7A560AE8169F16C8"
+					item: "theurgy:calcination_oven"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0F3AC83835796456"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "theurgy:alchemical_salt_strata"
+					}
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["79C5DDC4C206B5CC"]
+			description: [
+				"You have disscovered a machine that evaporates water leaving a small residue behind."
+				"This residue seems to have interesting properties"
+			]
+			icon: "theurgy:sal_ammoniac_bucket"
+			id: "51F41996E741B0F5"
+			subtitle: "The essence of alchemyt"
+			tasks: [
+				{
+					id: "1DF9762010F95C9C"
+					item: "theurgy:sal_ammoniac_accumulator"
+					type: "item"
+				}
+				{
+					id: "10EB39FD97CCD574"
+					item: "theurgy:sal_ammoniac_tank"
+					type: "item"
+				}
+				{
+					id: "1D0C029CC95AAC75"
+					item: "theurgy:sal_ammoniac_bucket"
+					type: "item"
+				}
+			]
+			title: "Sal Ammoniac"
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"51F41996E741B0F5"
+				"5C6972854B73D986"
+			]
+			description: ["Putting the sal ammoniac in a tank and having it liquify an object I managed to get it's \"soul\""]
+			id: "5A2B76CF9D066E93"
+			subtitle: "Can be made from charcoal as well"
+			tasks: [{
+				count: 20L
+				id: "18AC50F5AE7019F5"
+				item: {
+					Count: 1
+					id: "theurgy:alchemical_sulfur_coal"
+					tag: {
+						"theurgy:sulfur.source.id": "#minecraft:coals"
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			id: "79C5DDC4C206B5CC"
+			subtitle: "In this quest line we'll demonstrate how to work with theurgy to make \"infinite\" materials"
+			tasks: [{
+				id: "489CB68E11898C56"
+				title: "Turn your wood into diamonds"
+				type: "checkmark"
+			}]
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51F41996E741B0F5"]
+			id: "0707748A90B73A0A"
+			tasks: [{
+				id: "3858AB51E34A4F8B"
+				item: "theurgy:digestion_vat"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0707748A90B73A0A"
+				"6251867567F84BE2"
+			]
+			id: "53F8F62383869E32"
+			subtitle: "We're rich!"
+			tasks: [{
+				count: 20L
+				id: "28C98BC9F207E43E"
+				item: { Count: 20, id: "theurgy:purified_gold" }
+				type: "item"
+			}]
+			title: "Purified Gold"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A2B76CF9D066E93"]
+			description: ["By fermenting an objects soul I managed to obtain something more abstract. This abstract extract no longer contains a reference to the original material but a representation of what it was."]
+			icon: "theurgy:alchemical_sulfur_other_minerals_abundant"
+			id: "222FECF929BE508D"
+			subtitle: "Wait this isn't booze"
+			tasks: [
+				{
+					id: "39212B1075429685"
+					item: "theurgy:fermentation_vat"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "29BED142BBA34DB3"
+					item: "theurgy:alchemical_sulfur_other_minerals_abundant"
+					type: "item"
+				}
+			]
+			title: "Fermentation"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["38EB488C23BF6F98"]
+			icon: "theurgy:distiller"
+			id: "1E8AF352B413CC7E"
+			tasks: [
+				{
+					id: "26182C286C007B8A"
+					item: "theurgy:distiller"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "43AE9CC1F5D3EC19"
+					item: { Count: 10, id: "theurgy:mercury_shard" }
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1E8AF352B413CC7E"]
+			icon: "theurgy:incubator"
+			id: "050BE41D6540E5B2"
+			tasks: [
+				{
+					id: "05D7E1499F13836F"
+					item: "theurgy:incubator"
+					type: "item"
+				}
+				{
+					id: "2C687979D2002E31"
+					item: "theurgy:incubator_mercury_vessel"
+					type: "item"
+				}
+				{
+					id: "43C63E50E239E524"
+					item: "theurgy:incubator_salt_vessel"
+					type: "item"
+				}
+				{
+					id: "32405B7372C8D2EC"
+					item: "theurgy:incubator_sulfur_vessel"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1E8AF352B413CC7E"]
+			icon: "theurgy:mercury_catalyst"
+			id: "4BFCB254C51EF237"
+			subtitle: "Turns mercury to magic alchemical power"
+			tasks: [
+				{
+					id: "406B24C65D18B598"
+					item: "theurgy:sulfuric_flux_emitter"
+					type: "item"
+				}
+				{
+					id: "52F1F204ACCD479C"
+					item: "theurgy:mercury_catalyst"
+					type: "item"
+				}
+			]
+			title: "Power!!!"
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4BFCB254C51EF237"]
+			icon: "theurgy:reformation_result_pedestal"
+			id: "71B4609E6C6915D0"
+			subtitle: "Where the \"magic\" happens ;)"
+			tasks: [
+				{
+					count: 2L
+					id: "7AFE6EF15565779C"
+					item: { Count: 2, id: "theurgy:reformation_result_pedestal" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "465B37EE5108E3DF"
+					item: "theurgy:reformation_target_pedestal"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7BD542D7C6863626"
+					item: { Count: 5, id: "theurgy:reformation_source_pedestal" }
+					type: "item"
+				}
+			]
+			title: "The set up"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"0707748A90B73A0A"
+				"222FECF929BE508D"
+				"53F8F62383869E32"
+			]
+			id: "4FC7B16B2D6B0B23"
+			tasks: [{
+				count: 4L
+				id: "43341DDBFF63255F"
+				item: { Count: 4, id: "theurgy:alchemical_sulfur_other_minerals_precious" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4FC7B16B2D6B0B23"
+				"71B4609E6C6915D0"
+			]
+			id: "6DC900AB0E4A9778"
+			tasks: [{
+				id: "2E2A65166A250C05"
+				item: {
+					Count: 1
+					id: "theurgy:alchemical_sulfur_diamond"
+					tag: {
+						"theurgy:sulfur.source.id": "#forge:gems/diamond"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6DC900AB0E4A9778"
+				"050BE41D6540E5B2"
+			]
+			id: "27DF5EE31297CF0A"
+			shape: "octagon"
+			subtitle: "So we're not back in the mine"
+			tasks: [{
+				count: 16L
+				id: "4184239155DE4812"
+				item: { Count: 16, id: "minecraft:diamond" }
+				type: "item"
+			}]
+			title: "Diamonds!!!"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["38EB488C23BF6F98"]
+			id: "5C6972854B73D986"
+			tasks: [{
+				id: "274BFB35E5C4D762"
+				item: "theurgy:liquefaction_cauldron"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.5d
+		}
+	]
+	title: "Theurgy"
+}
