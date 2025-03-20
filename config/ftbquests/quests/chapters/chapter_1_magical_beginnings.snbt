@@ -2,7 +2,19 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "chapter_1_magical_beginnings"
-	group: ""
+	group: "06D39EEDC696AD5A"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
+			}
+		}
+		id: "mutantmonsters:mutant_skeleton_skull"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "4451E694CDA79657"
 	order_index: 0
 	quest_links: [ ]
@@ -249,7 +261,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["29A37A184A4A606C"]
 			id: "2131EEED76D1A917"
 			tasks: [{
 				id: "2E83BEB8BE422773"
@@ -291,11 +302,10 @@
 				type: "item"
 			}]
 			title: "Divinning the amethyst"
-			x: -13.5d
+			x: -12.0d
 			y: -7.0d
 		}
 		{
-			dependencies: ["693322F09812625E"]
 			id: "5D7CCF786458F746"
 			tasks: [{
 				id: "197EC0D98F014F6D"
@@ -314,10 +324,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"458E1E5888CB2E9C"
-				"464601CFC657DC27"
-			]
+			dependencies: ["464601CFC657DC27"]
 			id: "56A3FA5EB8130874"
 			tasks: [{
 				id: "6A9820BB9DCF8997"
@@ -336,7 +343,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["168CAF9B0A559E30"]
 			id: "49CC39C494B73D0C"
 			tasks: [{
 				id: "062466A3F3E76363"
@@ -395,21 +401,16 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["7095E9B49DAD9941"]
 			description: ["in case your having a hard time finding hexalia's mystical plants, we added some recipes to help you get started!"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "795A519CAF070290"
 			optional: true
 			tasks: [{
-				id: "76D47BC56D88931B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "hexalia:small_cauldron"
-				}
-				type: "item"
+				id: "7288402936C92CFA"
+				title: "confirm"
+				type: "checkmark"
 			}]
 			title: "Brewing Magical Flora"
 			x: -13.5d
@@ -475,7 +476,7 @@
 				type: "advancement"
 			}]
 			title: "the art of manaweaving"
-			x: 0.0d
+			x: -5.5d
 			y: 0.0d
 		}
 		{
@@ -498,7 +499,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: -5.5d
 			y: 2.0d
 		}
 	]

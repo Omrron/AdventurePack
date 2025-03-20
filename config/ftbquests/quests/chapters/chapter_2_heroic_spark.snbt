@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_2_heroic_spark"
+	group: "06D39EEDC696AD5A"
+	hide_quest_until_deps_complete: true
+	id: "66C622F66EC929F3"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["78A7AFD85B40012E"]
+		id: "5FADF3D9EE993E99"
+		tasks: [{
+			advancement: "mna:tier_1/advance_tier_2"
+			criterion: ""
+			id: "09CAF246B92DA29C"
+			type: "advancement"
+		}]
+		x: -3.0d
+		y: -2.5d
+	}]
+	title: "chapter 2: Heroic Spark"
+}
