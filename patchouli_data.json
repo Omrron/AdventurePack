@@ -22,7 +22,13 @@
         "hexalia:items/weather_idols",
         "hexalia:items/purifying_salts",
         "hexalia:equipment/rabbage",
-        "hexalia:enchanted_plants/grimshade"
+        "hexalia:enchanted_plants/grimshade",
+        "hexalia:resources/crops",
+        "hexalia:resources/salt",
+        "hexalia:rituals/ritual_braziers",
+        "hexalia:rituals/moonlight_ritual",
+        "hexalia:items/stone_dagger",
+        "hexalia:items/mortar_and_pestle"
       ],
       "bookmarks": [],
       "completedManualQuests": []

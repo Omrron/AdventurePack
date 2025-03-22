@@ -7,17 +7,394 @@
 	id: "66C622F66EC929F3"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["78A7AFD85B40012E"]
-		id: "5FADF3D9EE993E99"
-		tasks: [{
-			advancement: "mna:tier_1/advance_tier_2"
-			criterion: ""
-			id: "09CAF246B92DA29C"
-			type: "advancement"
-		}]
-		x: -3.0d
-		y: -2.5d
-	}]
+	quests: [
+		{
+			dependencies: ["78A7AFD85B40012E"]
+			id: "5FADF3D9EE993E99"
+			tasks: [{
+				advancement: "mna:tier_1/advance_tier_2"
+				criterion: ""
+				id: "09CAF246B92DA29C"
+				type: "advancement"
+			}]
+			title: "lighting the spark"
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5FADF3D9EE993E99"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "6A7DFC8D2922694A"
+			optional: true
+			tasks: [{
+				id: "35D15DAE5716E5A0"
+				title: "golemancy: my first automation"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A7DFC8D2922694A"]
+			id: "435D4D32BDA3479C"
+			tasks: [
+				{
+					id: "7E2E2D7439B130B4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mna:constructs/construct_grabber_arm_left_wickerwood"
+					}
+					type: "item"
+				}
+				{
+					id: "4669F03F0D6B6E9D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mna:constructs/construct_axe_arm_right_wickerwood"
+					}
+					type: "item"
+				}
+				{
+					id: "044F72008492C4AC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mna:constructs/construct_basic_head_wickerwood"
+					}
+					type: "item"
+				}
+				{
+					id: "56459DBB3D158BF9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mna:constructs/construct_storage_torso_wickerwood"
+					}
+					type: "item"
+				}
+				{
+					id: "76E93CA7987E09FC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mna:constructs/construct_basic_legs_wickerwood"
+					}
+					type: "item"
+				}
+			]
+			title: "my first golem"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["435D4D32BDA3479C"]
+			id: "0AA09BA1D1CE4B7D"
+			tasks: [{
+				id: "268ACEEF0B277186"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:runic_anvil"
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["435D4D32BDA3479C"]
+			id: "4965855E3923637D"
+			tasks: [{
+				id: "493FB2088E081986"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:runescribing_table"
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"0AA09BA1D1CE4B7D"
+				"4965855E3923637D"
+			]
+			id: "53279E76C90F67C8"
+			tasks: [{
+				id: "5676D96356FDA94A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:rune_marking"
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["53279E76C90F67C8"]
+			id: "269075F50AE33537"
+			tasks: [{
+				id: "4706DDAA75DED006"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:delegation_station"
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"480293DE44F4742A"
+				"269075F50AE33537"
+			]
+			description: ["using the delegation station, program the golem to chop wood and put it in a chest, use the bell of bidding to give the order!"]
+			id: "481A01ED2E516944"
+			tasks: [{
+				id: "1AA0FFA6B5CBE0F7"
+				title: "assemble the farm"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53279E76C90F67C8"]
+			id: "480293DE44F4742A"
+			tasks: [{
+				id: "53D6FE14893FB2D7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:bell_of_bidding"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5FADF3D9EE993E99"]
+			hide_until_deps_complete: false
+			id: "5B9128EFAA040903"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "5C0865D0AD5C0B94"
+				title: "call for adventure"
+				type: "dimension"
+			}]
+			title: "tale of the hero of hell"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["621919B7B9856143"]
+			dependency_requirement: "one_started"
+			hide_until_deps_complete: true
+			id: "4B671C6AF8193429"
+			optional: true
+			tasks: [
+				{
+					id: "412C53BD60A0628D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mna:burn_charm"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "42DB98132857B948"
+					item: "hexalia:chillberry_pie"
+					type: "item"
+				}
+				{
+					id: "2F626BE910B7611C"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "fire protection"
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5B9128EFAA040903"]
+			id: "21B452F638529F64"
+			tasks: [{
+				id: "511684F7284E3FB1"
+				structure: "minecraft:fortress"
+				type: "structure"
+			}]
+			title: "in the hellish court, there i stand..."
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["21B452F638529F64"]
+			hide_until_deps_complete: true
+			id: "621919B7B9856143"
+			tasks: [{
+				count: 16L
+				id: "63EA8A40E4EE87C7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:blaze_rod"
+				}
+				type: "item"
+			}]
+			title: "atop a mountain of bodies"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3D16449F519B1CD5"]
+			hide_until_deps_complete: false
+			id: "013ED7A5D37321A2"
+			tasks: [{
+				entity: "soulsweapons:accursed_lord_boss"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:withered_demon_heart"
+				}
+				id: "190B361C28A90391"
+				type: "kill"
+				value: 1L
+			}]
+			title: "to commit regicide"
+			x: -3.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4C09EF5C5C2523F7"]
+			description: ["no seriously, at your current power level this would be a pretty darn hard fight, the decayd king is no slouch and will delete you if your not carefull."]
+			hide_until_deps_complete: true
+			id: "3D16449F519B1CD5"
+			tasks: [{
+				id: "0260008DB63EF6C0"
+				title: "make sure your ready for what comes ahead"
+				type: "checkmark"
+			}]
+			title: "and prepare for revolution"
+			x: -3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["621919B7B9856143"]
+			hide_until_deps_complete: true
+			id: "78B0227281AB4D1F"
+			tasks: [{
+				id: "6B2BDDDF33D96F40"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:thaumaturgic_compass"
+					tag: {
+						tracking_key: "soulsweapons:decaying_kingdom"
+						tracking_mode: 0b
+						tracking_type: 1
+					}
+				}
+				type: "item"
+			}]
+			title: "I hire a hellish guide"
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["78B0227281AB4D1F"]
+			hide_until_deps_complete: true
+			id: "4C09EF5C5C2523F7"
+			rewards: [{
+				id: "534F24902DAFD0A4"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "255A9D7DD175A1BE"
+				structure: "soulsweapons:decaying_kingdom"
+				type: "structure"
+			}]
+			title: "I find their lair..."
+			x: -3.0d
+			y: 9.0d
+		}
+	]
 	title: "chapter 2: Heroic Spark"
 }
