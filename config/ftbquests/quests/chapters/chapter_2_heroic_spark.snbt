@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "chapter_2_heroic_spark"
 	group: "06D39EEDC696AD5A"
+	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
 	id: "66C622F66EC929F3"
 	order_index: 1
@@ -19,7 +20,7 @@
 			}]
 			title: "lighting the spark"
 			x: -3.0d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5FADF3D9EE993E99"]
@@ -394,6 +395,422 @@
 			title: "I find their lair..."
 			x: -3.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["5FADF3D9EE993E99"]
+			hide_until_deps_complete: true
+			id: "1C283BC8F62910B7"
+			tasks: [{
+				dimension: "aether:the_aether"
+				id: "49A7A7111102D98A"
+				title: "the hero of heaven"
+				type: "dimension"
+			}]
+			title: "tale of the hero of heaven"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1C283BC8F62910B7"]
+			hide_until_deps_complete: true
+			id: "721E0CA7782374DE"
+			tasks: [{
+				id: "308FBB3F18B2D153"
+				structure: "#ancient_aether:valkyrie_settlements"
+				title: "in the abandoned home of the warrior maidens..."
+				type: "structure"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["721E0CA7782374DE"]
+			hide_until_deps_complete: true
+			id: "745496D89CF4209B"
+			tasks: [{
+				id: "1CAAC3F47F1E0F6A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:thaumaturgic_compass"
+					tag: {
+						tracking_key: "ather:silver_dungeon"
+						tracking_mode: 0b
+						tracking_type: 1
+					}
+				}
+				type: "item"
+			}]
+			title: "to the new kingdom of heaven i went..."
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["745496D89CF4209B"]
+			hide_until_deps_complete: true
+			id: "46CF3082B22E0E4A"
+			tasks: [{
+				id: "727B24D36C0E4C7B"
+				structure: "aether:silver_dungeon"
+				title: "to challenge its trials"
+				type: "structure"
+			}]
+			title: "with the swiftness of an angel..."
+			x: -3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["46CF3082B22E0E4A"]
+			hide_until_deps_complete: true
+			id: "3272A40B6A5175DD"
+			tasks: [{
+				id: "01086209938B9BE2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "aether:victory_medal"
+				}
+				type: "item"
+			}]
+			title: "to challenge its trials..."
+			x: -3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3272A40B6A5175DD"]
+			hide_until_deps_complete: true
+			id: "5C147C658A078283"
+			tasks: [{
+				entity: "aether:valkyrie_queen"
+				id: "37A91891E1CCEC46"
+				type: "kill"
+				value: 1L
+			}]
+			title: "and become its champion."
+			x: -3.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["5FADF3D9EE993E99"]
+			hide_until_deps_complete: true
+			id: "5308F1EE8EA47DD0"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "3ED87FCE1F84788A"
+				type: "dimension"
+			}]
+			title: "tale of the hero of the multiverse"
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5308F1EE8EA47DD0"]
+			id: "7228929C1AB4C2F4"
+			tasks: [
+				{
+					count: 3L
+					id: "651F3BA8AE2BD12D"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:wither_skeleton_skull"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6DC36ECEFDEB3075"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:soul_sand"
+					}
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7228929C1AB4C2F4"]
+			id: "7603609FC77F7FAE"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "7AD9BC7AB700A1F7"
+				type: "kill"
+				value: 1L
+			}]
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7603609FC77F7FAE"]
+			id: "68466B4608FB9EE4"
+			tasks: [{
+				id: "3D7EF01987F78863"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "distant_worlds:wither_totem"
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68466B4608FB9EE4"]
+			id: "1ECDD80FE0A2F07B"
+			tasks: [{
+				count: 2L
+				id: "670B5D0E1B1DAA62"
+				item: {
+					Count: 2
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "distant_worlds:garhenna_eye"
+				}
+				type: "item"
+			}]
+			x: -13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1ECDD80FE0A2F07B"]
+			id: "1B3ABFE88A26A35E"
+			tasks: [{
+				id: "71B7691D3060835B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "distant_worlds:charged_wither_totem"
+				}
+				type: "item"
+			}]
+			x: -15.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1B3ABFE88A26A35E"]
+			id: "15EDAB3DEA011C3F"
+			tasks: [{
+				dimension: "distant_worlds:garhenna"
+				id: "3C9DA3E07147D09F"
+				type: "dimension"
+			}]
+			x: -18.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7603609FC77F7FAE"]
+			id: "204AD05BFA8E1DE3"
+			tasks: [{
+				biome: "minecraft:deep_dark"
+				id: "3FB4E93F04D09EFA"
+				type: "biome"
+			}]
+			x: -13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["204AD05BFA8E1DE3"]
+			id: "4830F7C1BC843673"
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "3C0108080D2FE402"
+				type: "kill"
+				value: 1L
+			}]
+			x: -15.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4FA6573DE7028456"
+				"2E858B5F5D9A2BC8"
+				"1A8F98489DF5640C"
+				"1621B9775101D998"
+			]
+			description: ["WIP"]
+			id: "59EA8C5833A6EC1E"
+			tasks: [{
+				id: "1CE2113AA762C1AC"
+				title: "Ritual of second ascension"
+				type: "checkmark"
+			}]
+			x: -26.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["44A7E44FCCCECC2B"]
+			id: "5E4CD602E1FF1C9F"
+			tasks: [{
+				dimension: "deeperdarker:otherside"
+				id: "54DF04A18EFC37B4"
+				type: "dimension"
+			}]
+			x: -20.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["15EDAB3DEA011C3F"]
+			id: "2E858B5F5D9A2BC8"
+			tasks: [
+				{
+					id: "71E15C7358A7F754"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "distant_worlds:vinretty"
+					}
+					type: "item"
+				}
+				{
+					id: "2F1A6117841A7659"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "distant_worlds:ofypletta"
+					}
+					type: "item"
+				}
+				{
+					id: "0084D7CDEDF7E6AB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "distant_worlds:anewort"
+					}
+					type: "item"
+				}
+				{
+					id: "20A818293581E340"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "distant_worlds:flemmawies"
+					}
+					type: "item"
+				}
+			]
+			title: "adventure through Garhena"
+			x: -23.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["013ED7A5D37321A2"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "4FA6573DE7028456"
+			tasks: [{
+				id: "72B7D70DEEB79A47"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:lord_soul_red"
+				}
+				type: "item"
+			}]
+			x: -26.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4830F7C1BC843673"]
+			id: "44A7E44FCCCECC2B"
+			tasks: [{
+				id: "66A7B32D2FEBD3DD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "deeperdarker:heart_of_the_deep"
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5E4CD602E1FF1C9F"]
+			id: "1A8F98489DF5640C"
+			tasks: [{
+				id: "5D83414364030533"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "deeperdarker:sculk_bone"
+				}
+				type: "item"
+			}]
+			x: -23.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7603609FC77F7FAE"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "1621B9775101D998"
+			tasks: [{
+				id: "02543403E3943FB3"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: -23.5d
+			y: -5.0d
 		}
 	]
 	title: "chapter 2: Heroic Spark"
