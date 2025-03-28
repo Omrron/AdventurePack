@@ -31,7 +31,7 @@
 		beam_alpha = 0.75
 		#The distance from the player the beam should start fading.
 		#Range: 0.0 ~ 100.0
-		beam_fade_distance = 2.0
+		beam_fade_distance = 10.0
 		#If the Loot Beam should use a solid texture or the beacon style texture.
 		solid_beam = true
 		#If the Loot Beam should have a white center.
@@ -120,7 +120,7 @@
 		#If vanilla tooltips should be rendered on items in world.
 		advanced_tooltips = true
 		#If tooltips should be rendered in world.
-		worldspace_tooltips = true
+		worldspace_tooltips = false
 		#Render nametags as bordered. Set to false for flat nametag with background.
 		borders = false
 		#If Item nametags should be rendered.
