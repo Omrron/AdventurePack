@@ -102,47 +102,47 @@ ServerEvents.recipes((event) => {
       A: {
         item: 'deeperdarker:sculk_bone',
         optional: false,
-        consume: true,
+        consume: false,
       },
       B: {
-        item: 'distant_worlds:vinretty',
+        item: 'alexscaves:radiant_essence',
         optional: false,
-        consume: true,
+        consume: false,
       },
       C: {
         item: 'minecraft:nether_star',
         optional: false,
-        consume: true,
+        consume: false,
       },
       D: {
-        item: 'distant_worlds:ofypletta',
+        item: 'alexscaves:nuclear_bomb',
         optional: false,
-        consume: true,
+        consume: false,
       },
       E: {
         item: 'aether:golden_amber',
         optional: false,
-        consume: true,
+        consume: false,
       },
       F: {
-        item: 'distant_worlds:anewort',
+        item: 'alexscaves:resistor_shield',
         optional: false,
-        consume: true,
+        consume: false,
       },
       G: {
         item: 'cataclysm:amethyst_crab_meat',
         optional: false,
-        consume: true,
+        consume: false,
       },
       H: {
-        item: 'distant_worlds:flemmawies',
+        item: 'alexscaves:tectonic_shard',
         optional: false,
-        consume: true,
+        consume: false,
       },
       I: {
         item: 'soulsweapons:lord_soul_red',
         optional: false,
-        consume: true,
+        consume: false,
       },
     },
     manaweave: [
@@ -154,6 +154,7 @@ ServerEvents.recipes((event) => {
     ],
     // as it stands right now this doesn't work even though it should according to the docs.
     // TODO: FIX THIS
-    command:'/teamstage team add @s secondAscension'
-  })
+    command:'/give @s macabre:sacrificial_dirk',
+    createsItem: 'macabre:sacrificial_dirk',
+  }).id('mna:call_of_the_macabre');
 });

@@ -1,0 +1,124 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_3_call_of_the_macabre"
+	group: "06D39EEDC696AD5A"
+	id: "3BE839C3C8E9C8D1"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["59EA8C5833A6EC1E"]
+			hide_until_deps_complete: true
+			id: "3CC75A8C02776FF2"
+			tasks: [{
+				dimension: "macabre:the_pit"
+				id: "67A8FC7889FDE868"
+				type: "dimension"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3CC75A8C02776FF2"]
+			id: "05443EB1555C3C7A"
+			tasks: [{
+				advancement: "mna:tier_2/advance_tier_3"
+				criterion: ""
+				id: "42369E9725A715E5"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3CC75A8C02776FF2"]
+			id: "3E24F8E2AC39CE74"
+			tasks: [
+				{
+					count: 2L
+					id: "6414C692E5B52132"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "macabre:skin_tissue"
+					}
+					type: "item"
+				}
+				{
+					id: "789736D75D1247EA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "macabre:bone"
+					}
+					type: "item"
+				}
+				{
+					id: "7AB61692B0DDF80E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "macabre:raw_blood_clot"
+					}
+					type: "item"
+				}
+				{
+					id: "38A514A3DB8509AA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "macabre:ferrum_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "find a way back"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5B40BFDCBDB4DA48"]
+			dependency_requirement: "one_completed"
+			id: "2E1FDB8087C2A28B"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "20233CD4C8703688"
+				title: "Escape the Pit"
+				type: "dimension"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E24F8E2AC39CE74"]
+			id: "5B40BFDCBDB4DA48"
+			tasks: [{
+				entity: "macabre:hollow"
+				id: "12CF09672EBA524B"
+				title: "Cull the Hollow"
+				type: "kill"
+				value: 10L
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+	]
+	title: "chapter 3: Age of Apocalypse"
+}

@@ -225,7 +225,7 @@
 		}
 		{
 			dependencies: ["5FADF3D9EE993E99"]
-			hide_until_deps_complete: false
+			hide_until_deps_complete: true
 			id: "5B9128EFAA040903"
 			tasks: [{
 				dimension: "minecraft:the_nether"
@@ -561,75 +561,6 @@
 		}
 		{
 			dependencies: ["7603609FC77F7FAE"]
-			id: "68466B4608FB9EE4"
-			tasks: [{
-				id: "3D7EF01987F78863"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "distant_worlds:wither_totem"
-				}
-				type: "item"
-			}]
-			x: -11.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["68466B4608FB9EE4"]
-			id: "1ECDD80FE0A2F07B"
-			tasks: [{
-				count: 2L
-				id: "670B5D0E1B1DAA62"
-				item: {
-					Count: 2
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "distant_worlds:garhenna_eye"
-				}
-				type: "item"
-			}]
-			x: -13.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["1ECDD80FE0A2F07B"]
-			id: "1B3ABFE88A26A35E"
-			tasks: [{
-				id: "71B7691D3060835B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "distant_worlds:charged_wither_totem"
-				}
-				type: "item"
-			}]
-			x: -15.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["1B3ABFE88A26A35E"]
-			id: "15EDAB3DEA011C3F"
-			tasks: [{
-				dimension: "distant_worlds:garhenna"
-				id: "3C9DA3E07147D09F"
-				type: "dimension"
-			}]
-			x: -18.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7603609FC77F7FAE"]
 			id: "204AD05BFA8E1DE3"
 			tasks: [{
 				biome: "minecraft:deep_dark"
@@ -654,16 +585,30 @@
 		{
 			dependencies: [
 				"4FA6573DE7028456"
-				"2E858B5F5D9A2BC8"
 				"1A8F98489DF5640C"
 				"1621B9775101D998"
+				"5045A64B2BE10980"
+				"0C36EB3AE5FCEECE"
+				"193FE60090B2C764"
+				"7F78173866671EFF"
+				"390B302653441200"
+				"6B17698A79BA6163"
 			]
 			description: ["WIP"]
 			id: "59EA8C5833A6EC1E"
+			shape: "square"
 			tasks: [{
-				id: "1CE2113AA762C1AC"
-				title: "Ritual of second ascension"
-				type: "checkmark"
+				id: "49DA95C66A3E4E01"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "macabre:sacrificial_dirk"
+				}
+				type: "item"
 			}]
 			x: -26.5d
 			y: -2.0d
@@ -678,67 +623,6 @@
 			}]
 			x: -20.5d
 			y: -2.0d
-		}
-		{
-			dependencies: ["15EDAB3DEA011C3F"]
-			id: "2E858B5F5D9A2BC8"
-			tasks: [
-				{
-					id: "71E15C7358A7F754"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"celestisynth:celestisynthitemstackcapabilities": {
-								cs.aquaSkin: 0
-							}
-						}
-						id: "distant_worlds:vinretty"
-					}
-					type: "item"
-				}
-				{
-					id: "2F1A6117841A7659"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"celestisynth:celestisynthitemstackcapabilities": {
-								cs.aquaSkin: 0
-							}
-						}
-						id: "distant_worlds:ofypletta"
-					}
-					type: "item"
-				}
-				{
-					id: "0084D7CDEDF7E6AB"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"celestisynth:celestisynthitemstackcapabilities": {
-								cs.aquaSkin: 0
-							}
-						}
-						id: "distant_worlds:anewort"
-					}
-					type: "item"
-				}
-				{
-					id: "20A818293581E340"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"celestisynth:celestisynthitemstackcapabilities": {
-								cs.aquaSkin: 0
-							}
-						}
-						id: "distant_worlds:flemmawies"
-					}
-					type: "item"
-				}
-			]
-			title: "adventure through Garhena"
-			x: -23.5d
-			y: 1.5d
 		}
 		{
 			dependencies: ["013ED7A5D37321A2"]
@@ -759,7 +643,7 @@
 				type: "item"
 			}]
 			x: -26.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4830F7C1BC843673"]
@@ -809,8 +693,282 @@
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
+			x: -29.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0991FC930D083144"]
+			id: "661CE7148A83E4D1"
+			tasks: [{
+				id: "476B68356DE498D8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:cave_codex"
+					tag: {
+						CaveBiome: "alexscaves:primordial_caves"
+					}
+				}
+				type: "item"
+			}]
 			x: -23.5d
-			y: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["48AE08D85691E240"]
+			id: "144093FC88F48FD2"
+			tasks: [{
+				id: "38CA673D743B3FFA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:cave_codex"
+					tag: {
+						CaveBiome: "alexscaves:candy_cavity"
+					}
+				}
+				type: "item"
+			}]
+			x: -13.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["30AA1BA218D567EF"]
+			id: "10ADEBBFB7E2ED97"
+			tasks: [{
+				id: "39E6413CF329C0B6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:cave_codex"
+					tag: {
+						CaveBiome: "alexscaves:toxic_caves"
+					}
+				}
+				type: "item"
+			}]
+			x: -18.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5308F1EE8EA47DD0"]
+			id: "218BF3E3F1294E34"
+			tasks: [{
+				id: "04A5760EBBAEA8D3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:cave_codex"
+					tag: {
+						CaveBiome: "alexscaves:magnetic_caves"
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["218BF3E3F1294E34"]
+			id: "48AE08D85691E240"
+			tasks: [{
+				id: "2AEDDF6E9D1AB44C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:resistor_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["661CE7148A83E4D1"]
+			id: "5045A64B2BE10980"
+			tasks: [{
+				id: "78BFEF38B0F28CDE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:tectonic_shard"
+				}
+				type: "item"
+			}]
+			x: -26.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["10ADEBBFB7E2ED97"]
+			id: "0991FC930D083144"
+			tasks: [{
+				id: "473D030590F4881C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:nuclear_bomb"
+				}
+				type: "item"
+			}]
+			x: -20.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["144093FC88F48FD2"]
+			id: "30AA1BA218D567EF"
+			tasks: [{
+				id: "24F1D4DD26CFBD53"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:radiant_essence"
+				}
+				type: "item"
+			}]
+			x: -15.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["30AA1BA218D567EF"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "7F78173866671EFF"
+			tasks: [{
+				id: "3C743964EEA931F5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:radiant_essence"
+				}
+				type: "item"
+			}]
+			x: -29.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["48AE08D85691E240"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "193FE60090B2C764"
+			tasks: [{
+				id: "4FA8CE92830DF0D3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:resistor_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -29.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0991FC930D083144"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "0C36EB3AE5FCEECE"
+			tasks: [{
+				id: "35FB855DB987F30E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:nuclear_bomb"
+				}
+				type: "item"
+			}]
+			x: -24.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5FADF3D9EE993E99"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "6B17698A79BA6163"
+			tasks: [{
+				id: "63214E3082F38FAB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:amethyst_crab_meat"
+				}
+				type: "item"
+			}]
+			x: -28.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5C147C658A078283"]
+			hide_dependency_lines: true
+			id: "390B302653441200"
+			tasks: [{
+				id: "77B331707C66C536"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "aether:golden_amber"
+				}
+				type: "item"
+			}]
+			x: -25.0d
+			y: 1.0d
 		}
 	]
 	title: "chapter 2: Heroic Spark"
