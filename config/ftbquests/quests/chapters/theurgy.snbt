@@ -3,6 +3,15 @@
 	default_quest_shape: ""
 	filename: "theurgy"
 	group: "692089893F81AFA7"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
+			}
+		}
+		id: "theurgy:alchemical_sulfur_gems_precious"
+	}
 	id: "3D259F31082A5151"
 	order_index: 1
 	quest_links: [ ]
@@ -85,7 +94,7 @@
 				}
 			]
 			title: "Sal Ammoniac"
-			x: -8.5d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
@@ -119,8 +128,8 @@
 				title: "Turn your wood into diamonds"
 				type: "checkmark"
 			}]
-			x: -12.0d
-			y: -1.5d
+			x: -12.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["51F41996E741B0F5"]

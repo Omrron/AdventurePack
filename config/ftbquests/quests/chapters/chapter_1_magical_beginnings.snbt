@@ -133,6 +133,14 @@
 				}
 			}
 			id: "78A7AFD85B40012E"
+			rewards: [{
+				auto: "invisible"
+				effect: "PLAYER"
+				id: "34B5A5C624057B87"
+				remove: false
+				stage: "one"
+				type: "teamstages:change_stage"
+			}]
 			shape: "square"
 			tasks: [{
 				entity: "mutantmonsters:mutant_skeleton"
@@ -477,7 +485,7 @@
 				type: "advancement"
 			}]
 			title: "the art of manaweaving"
-			x: -5.5d
+			x: -5.0d
 			y: 0.0d
 		}
 		{
