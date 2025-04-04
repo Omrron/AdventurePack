@@ -401,7 +401,7 @@
 	"Ancient Remnant's prevent attacks from far away Range" = 14.0
 	#Ancient Remnant's DamageCap
 	#Range: 0.0 ~ 1000000.0
-	AncientRemnantCap = 21.0
+	AncientRemnantCap = 100.0
 	#Ancient Remnant's DamageTime
 	#Range: 0 ~ 100
 	"Ancient Remnant DamageTime" = 12
