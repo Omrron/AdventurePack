@@ -2,6 +2,17 @@
   "bookGuiScale": 0,
   "clickedVisualize": false,
   "bookData": {
+    "distant_worlds:garhenna_book": {
+      "viewedEntries": [
+        "distant_worlds:garhenna_natural/fuzianna",
+        "distant_worlds:garhenna_natural/wiltum_trees",
+        "distant_worlds:garhenna_natural/wokamire",
+        "distant_worlds:garhenna_natural/garsale_trees",
+        "distant_worlds:garhenna_natural/huge_culafite_mushrooms"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "hexalia:verdant_grimoire": {
       "viewedEntries": [
         "hexalia:resources/herbs",
@@ -22,7 +33,22 @@
         "hexalia:items/weather_idols",
         "hexalia:items/purifying_salts",
         "hexalia:equipment/rabbage",
-        "hexalia:enchanted_plants/grimshade"
+        "hexalia:enchanted_plants/grimshade",
+        "hexalia:resources/crops",
+        "hexalia:resources/salt",
+        "hexalia:rituals/ritual_braziers",
+        "hexalia:rituals/moonlight_ritual",
+        "hexalia:items/stone_dagger",
+        "hexalia:items/mortar_and_pestle"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "distant_worlds:distant_worlds_book": {
+      "viewedEntries": [
+        "distant_worlds:misc_information/message_to_player",
+        "distant_worlds:misc_information/feedback",
+        "distant_worlds:getting_started/garhenna"
       ],
       "bookmarks": [],
       "completedManualQuests": []

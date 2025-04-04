@@ -1145,6 +1145,46 @@
 			x: -4.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["57C05E36834CDD8A"]
+			description: [
+				"put amethyst or glowberries on a ritual brazier beneath the moon to fill them with its power."
+				""
+				"must be nighttime and have direct line of sight with the sky"
+			]
+			id: "5C2FF318BD3AF053"
+			tasks: [
+				{
+					id: "495C31B0E718ED28"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "hexalia:moon_crystal"
+					}
+					type: "item"
+				}
+				{
+					id: "121962B320514582"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "hexalia:moon_berries"
+					}
+					type: "item"
+				}
+			]
+			title: "Moonlight infusion"
+			x: 6.0d
+			y: -4.5d
+		}
 	]
 	title: "hexalia"
 }

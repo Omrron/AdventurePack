@@ -230,6 +230,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["62D4C07589C645FF"]
 			id: "07FE11B093DBEFFA"
 			tasks: [{
 				count: 16L
@@ -420,7 +421,7 @@
 				title: "confirm"
 				type: "checkmark"
 			}]
-			title: "Brewing Magical Flora"
+			title: "Weaving Magic Into Plants"
 			x: -13.5d
 			y: -2.0d
 		}
@@ -509,6 +510,25 @@
 			}]
 			x: -5.5d
 			y: 2.0d
+		}
+		{
+			id: "62D4C07589C645FF"
+			tasks: [{
+				id: "45D38FE5642CBDA3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mna:guide_book"
+				}
+				type: "item"
+			}]
+			title: "An introduction to the arcane arts"
+			x: -2.5d
+			y: 4.0d
 		}
 	]
 	title: "Chapter 1: magical beginnings"

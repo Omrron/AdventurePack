@@ -1,0 +1,74 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "important_utilities"
+	group: ""
+	id: "68AFE45FF24A9270"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Mana and Artifice provides a pretty awesome way of locating any structure you want, its called: the thaumaturgic compass!"
+				""
+				"the thaumaturgic compass will always point towared a structure of the type its bound, you can shift-right-click it to search again for the nearest one!"
+				""
+				"it is made using the ritual of locating, the structure type to which it is bound is decided by the thaumaturgic link used in the ritual."
+				""
+				"the thaumaturgic links can all be bought from the wandering wizard (summoned through the ritual of the wandering wizard) for one ventium ingot a piece"
+			]
+			id: "47F5FD6DA30A98A5"
+			tasks: [{
+				id: "330A453493301213"
+				title: "thaumaturgic locating"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"tired of wandering aimlessly looking for the one desert that generated in you world?"
+				""
+				"want to actually find a swamp instead of running through frozen mountains?"
+				"well, worry no more!"
+				"the natures compass can easily locate the closest instance of any biome you want and point you straight to it!!"
+				"satisfaction gurranteed!"
+			]
+			id: "6D007C45E0AADAD0"
+			tasks: [{
+				id: "3AA2007A9E3F5871"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"dont really have to follow this one, its just a personal recommendation from me to you:"
+				""
+				"you should get as your first spell from mana and artifice a touch+break spell."
+				"it provides stone pickaxe level mining with insta-breaking, and its a great way to save on iron pickaxe durability early on as well as training you mana level."
+			]
+			id: "15F95B6B2D83A761"
+			tasks: [{
+				id: "6F642C709C067595"
+				title: "recomended first spell"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+	]
+	title: "important utilities"
+}
