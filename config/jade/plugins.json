@@ -51,6 +51,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "hammerlib": {
+    "root": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,

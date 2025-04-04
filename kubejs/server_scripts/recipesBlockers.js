@@ -1,7 +1,4 @@
 ServerEvents.recipes((event) => {
-
-    event.addedRecipes(event.recipes())
-
     /**
      * @param {Internal.RecipeFilter_[]}
      * @param {Internal.Ingredient_} ouput
