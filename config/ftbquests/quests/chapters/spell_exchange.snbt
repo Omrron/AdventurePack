@@ -1,0 +1,712 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "spell_exchange"
+	group: ""
+	id: "68BE12CDD5A11687"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"this is the great spell exchange!"
+				"found a spell you dont like?"
+				"want to exchange it for something else?"
+				"well come right in!"
+				"here you can trade your spells for other spells to find what you like."
+			]
+			id: "53256E043A4AC96F"
+			tasks: [{
+				id: "3563517EAC6FF2BC"
+				title: "welcome to the spell exchange!"
+				type: "checkmark"
+			}]
+			title: "welcome to the spell exchange!"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			id: "4F17A8438E77DFF7"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4DE4C0275392CDE3"
+				table_id: 325586407093129557L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "48BDDA0D7E5AE936"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "Scroll"
+				type: "item"
+			}]
+			title: "Global Scrolls: Common"
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4451E694CDA79657"]
+			hide_until_deps_complete: true
+			id: "310459F27053A1C4"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "10AFA35E78C333A1"
+				table_id: 3156555097246918112L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "6BEDE98CA475E825"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "2x Scrolls"
+				type: "item"
+			}]
+			title: "Global Scrolls: Uncommon"
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4451E694CDA79657"]
+			hide_until_deps_complete: true
+			id: "2AC1A08E07C22001"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "43031D9C808C5EC5"
+				table_id: 4887675908364919781L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "77D4528F9864C5D8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "4x Scrolls"
+				type: "item"
+			}]
+			title: "Global Scrolls: Rare"
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66C622F66EC929F3"]
+			id: "7433B433DD9260E4"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "38E656232AB9C0DC"
+				table_id: 4883374056249619433L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "6D8576F5689C8232"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "8x Scrolls"
+				type: "item"
+			}]
+			title: "Global Spells: Epic"
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			id: "42323E1826AFFF0F"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0655382D4A72AF4B"
+				table_id: 4208312351372305079L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "49269AFCD01B97AF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "Scroll"
+				type: "item"
+			}]
+			title: "Melee Spells: Common"
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4451E694CDA79657"]
+			hide_until_deps_complete: true
+			id: "4FDBDF92ED01C091"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "33672A99F22E9814"
+				table_id: 6461196023669753439L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "3345C65FB7D9803E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "2x Scrolls"
+				type: "item"
+			}]
+			title: "Melee Spells: Uncommon"
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4451E694CDA79657"]
+			hide_until_deps_complete: true
+			id: "5245B8030B99680A"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "090105003138869F"
+				table_id: 4351977135515594296L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "62B5DD8F336C2EB8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "4x Scrolls"
+				type: "item"
+			}]
+			title: "Melee Spells: Rare"
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66C622F66EC929F3"]
+			hide_until_deps_complete: true
+			id: "7193F8CC1E67A458"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00BC3E7F8C5ED089"
+				table_id: 8972184074492954679L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "233D68BA3FF0FB7A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "8x Scrolls"
+				type: "item"
+			}]
+			title: "Melee Spells: Epic"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			id: "110983813D91A99B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "310687AF8F34BFF3"
+				table_id: 8507054703880273167L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "34500F2D10A18012"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "Scroll"
+				type: "item"
+			}]
+			title: "Support Spells: Common"
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4451E694CDA79657"]
+			hide_until_deps_complete: true
+			id: "5F462855D194793A"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1EB757CDDAEA0C93"
+				table_id: 8688282305696377593L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "22EF8FBDA53DC71D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "2x Scrolls"
+				type: "item"
+			}]
+			title: "Support Spells: Uncommon"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4451E694CDA79657"]
+			hide_until_deps_complete: true
+			id: "20988BEE50095FB3"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F497D0D9612EACD"
+				table_id: 503378763490055857L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "7F8948BEAFEF6EE5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "4x Scrolls"
+				type: "item"
+			}]
+			title: "Support Spells: Rare"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66C622F66EC929F3"]
+			hide_until_deps_complete: true
+			id: "022300DC6F717A96"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49DC6F1DEEF9B977"
+				table_id: 9129187802358646425L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "4F97E7FADF4AEC87"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "8x Scrolls"
+				type: "item"
+			}]
+			title: "Support Spells: Epic"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			id: "6D9196EB890B18F3"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "21110D5AF37711B1"
+				table_id: 6861823170341102182L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "4BB33C23C033C11B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "Scroll"
+				type: "item"
+			}]
+			title: "Caster Spells: Common"
+			x: -8.5d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4451E694CDA79657"]
+			hide_until_deps_complete: true
+			id: "1476A7804A0BEA53"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "35FA073D24680F76"
+				table_id: 3169298886920423562L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "202797CC9C4C2D30"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "2x Scrolls"
+				type: "item"
+			}]
+			title: "Caster Spells: Uncommon"
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4451E694CDA79657"]
+			hide_until_deps_complete: true
+			id: "132B1DA93B2F7BDC"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0C499C7FEAD5C09B"
+				table_id: 7609643819743847585L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "65293A6FCEC4DB38"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "4x Scrolls"
+				type: "item"
+			}]
+			title: "Caster Spells: Rare"
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66C622F66EC929F3"]
+			hide_until_deps_complete: true
+			id: "6FBCD023CDF15218"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "683023CFA5F3CEE6"
+				table_id: 5318441714993085763L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "68A325D0A9D3F65C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "8x Scrolls"
+				type: "item"
+			}]
+			title: "Caster Spells: Epic"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			id: "64EEC2066491AF4A"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18A00B1D2B0DDEB4"
+				table_id: 6924108357931167023L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "195E12935A2F0CB4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "Scroll"
+				type: "item"
+			}]
+			title: "Summoner Spells: Common"
+			x: -8.5d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4451E694CDA79657"]
+			hide_until_deps_complete: true
+			id: "66A2F5E834561AA1"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30C9F865205E4652"
+				table_id: 4290626119267020496L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "61ADF5EB0822B65A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "2x Scrolls"
+				type: "item"
+			}]
+			title: "Summoner Spells: Uncommon"
+			x: -7.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4451E694CDA79657"]
+			hide_until_deps_complete: true
+			id: "4F51DE5D9939B7FC"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2EE45CE4460C3DE9"
+				table_id: 2833874173445653124L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "3BC2D17B231692DF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "4x Scrolls"
+				type: "item"
+			}]
+			title: "Summoner Spells: Rare"
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66C622F66EC929F3"]
+			hide_until_deps_complete: true
+			id: "61B060BDC9593715"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "151B1FD253F75771"
+				table_id: 5447972204080954319L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "79F22B61A114AB01"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:scroll"
+					tag: { }
+				}
+				match_nbt: false
+				title: "8x Scrolls"
+				type: "item"
+			}]
+			title: "Summoner Spells: Epic"
+			x: -4.0d
+			y: 4.0d
+		}
+	]
+	title: "spell exchange"
+}

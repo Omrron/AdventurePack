@@ -39,7 +39,18 @@
         "hexalia:rituals/ritual_braziers",
         "hexalia:rituals/moonlight_ritual",
         "hexalia:items/stone_dagger",
-        "hexalia:items/mortar_and_pestle"
+        "hexalia:items/mortar_and_pestle",
+        "hexalia:brewing/brews",
+        "hexalia:enchanted_plants/nautilite",
+        "hexalia:enchanted_plants/morphora",
+        "hexalia:blocks/dreamcatcher",
+        "hexalia:brewing/rustic_oven",
+        "hexalia:brewing/brew_shelf",
+        "hexalia:brewing/small_cauldron",
+        "hexalia:equipment/kelpweave_blade",
+        "hexalia:equipment/earplugs",
+        "hexalia:equipment/ghostveil",
+        "hexalia:world_gen/structures"
       ],
       "bookmarks": [],
       "completedManualQuests": []

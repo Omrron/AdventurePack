@@ -1,0 +1,16 @@
+#The following attributes settings are ONLY set when a player first joins a world with this mod loaded. Manual resetting of attributes is required for config changes to apply.
+#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+startingMaxManaModifier = 0.0
+#Range: -2048.0 ~ 2048.0
+startingMaxManaMultiplier = 1.0
+#Range: 0.01 ~ 100.0
+startingManaRegenMultiplier = 1.0
+#Range: 0.001 ~ 2048.0
+startingCastSpeedMultiplier = 1.0
+#Range: -2048.0 ~ 2048.0
+startingSpellDamageModifier = 0.0
+#Range: 0.0 ~ 2048.0
+startingSpellDamageMultiplier = 1.0
+#Range: -2048.0 ~ 2048.0
+startingSpellEfficiencyMultiplier = 1.0
+

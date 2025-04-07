@@ -103,7 +103,7 @@
 				title: "Escape the Pit"
 				type: "dimension"
 			}]
-			x: -4.5d
+			x: -6.5d
 			y: -1.0d
 		}
 		{
@@ -117,7 +117,7 @@
 				value: 10L
 			}]
 			x: -4.5d
-			y: -2.5d
+			y: -1.0d
 		}
 	]
 	title: "chapter 3: Age of Apocalypse"

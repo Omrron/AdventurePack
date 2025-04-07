@@ -1,0 +1,30 @@
+{
+	id: "43C53AD4B81DF3E9"
+	loot_size: 1
+	order_index: 3
+	rewards: [{
+		item: {
+			Count: 1
+			ForgeCaps: {
+				"celestisynth:celestisynthitemstackcapabilities": {
+					cs.aquaSkin: 0
+				}
+			}
+			id: "irons_spellbooks:scroll"
+			tag: {
+				ISB_Spells: {
+					data: [{
+						id: "irons_spellbooks:angel_wing"
+						index: 0
+						level: 1
+						locked: 1b
+					}]
+					maxSpells: 1
+					mustEquip: 0b
+					spellWheel: 0b
+				}
+			}
+		}
+	}]
+	title: "global spells: epic"
+}
