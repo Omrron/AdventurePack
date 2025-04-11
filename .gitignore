@@ -13,3 +13,7 @@ usercache.json
 usernamecache.json
 user-prefs.json
 minecraftinstance.json
+screenshots
+/ESM
+/config/jei/world/local
+/schematics

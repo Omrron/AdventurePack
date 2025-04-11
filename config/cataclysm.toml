@@ -395,7 +395,7 @@
 	AncientRemnantDamageMultiplier = 1.0
 	#AncientRemnant's Healing with out target
 	#Range: 0.0 ~ 1000000.0
-	AncientRemnantNatureHealing = 10.0
+	AncientRemnantNatureHealing = 5.0
 	#Ancient Remnant's Immune to Long distance attack range.
 	#Range: 1.0 ~ 1000000.0
 	"Ancient Remnant's prevent attacks from far away Range" = 14.0

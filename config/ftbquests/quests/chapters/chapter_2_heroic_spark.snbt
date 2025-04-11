@@ -5,6 +5,15 @@
 	group: "06D39EEDC696AD5A"
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
+			}
+		}
+		id: "soulsweapons:lord_soul_day_stalker"
+	}
 	id: "66C622F66EC929F3"
 	order_index: 1
 	quest_links: [ ]
