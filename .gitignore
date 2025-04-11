@@ -17,3 +17,8 @@ screenshots
 /ESM
 /config/jei/world/local
 /schematics
+/config/fabric/indigo-renderer.properties
+/config/flywheel-client.toml
+/config/attributefix.json
+/config/embeddium-fingerprint.json
+/config/embeddium-options.json
