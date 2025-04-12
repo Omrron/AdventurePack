@@ -1,1 +1,13 @@
-[]
+[
+    {
+        "mod": "mutantmonsters",
+        "result": "allow",
+        "gamestage": "one",
+        "when": "onjoin"
+    },
+    {
+        "mod": "mutantmonsters",
+        "result": "deny",
+        "when": "onjoin"
+    }
+]

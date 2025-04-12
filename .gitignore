@@ -22,3 +22,5 @@ screenshots
 /config/attributefix.json
 /config/embeddium-fingerprint.json
 /config/embeddium-options.json
+*.dll
+*.dll.x
