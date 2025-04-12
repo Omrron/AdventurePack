@@ -13,4 +13,6 @@ startingSpellDamageModifier = 0.0
 startingSpellDamageMultiplier = 1.0
 #Range: -2048.0 ~ 2048.0
 startingSpellEfficiencyMultiplier = 1.0
+#Range: 0.0 ~ 2048.0
+startingSpellDurationMultiplier = 1.0
 
