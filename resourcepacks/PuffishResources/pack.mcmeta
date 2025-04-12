@@ -1,0 +1,7 @@
+{
+	"pack": {
+		"pack_format": 15,
+		"supported_formats": [0, 999],
+		"description": "Skill tree for adventure modpack by omrron"
+	}
+}
