@@ -5,8 +5,8 @@
  */
 const removeRecipeFromStage = (filters, stage, event) => {
     filters.forEach((filter) => {
-        event.forEachRecipe(filter, (b) => {
-            b.id(b.getId() + 'manualonly').stage(stage);
+        event.forEachRecipe(filter, (recipe) => {
+            recipe.id(recipe.getId() + 'manualonly').stage(stage);
         })
     });
 }

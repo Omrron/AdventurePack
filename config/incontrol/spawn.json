@@ -3,11 +3,11 @@
         "mod": "mutantmonsters",
         "result": "allow",
         "gamestage": "one",
-        "when": "onjoin"
+        "when": "position"
     },
     {
         "mod": "mutantmonsters",
         "result": "deny",
-        "when": "onjoin"
+        "when": "position"
     }
 ]
