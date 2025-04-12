@@ -25,3 +25,4 @@ screenshots
 *.dll
 *.dll.x
 /downloads
+*.log
