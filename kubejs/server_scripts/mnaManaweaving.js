@@ -63,4 +63,23 @@ ServerEvents.recipes(event => {
             "mna:manaweave_patterns/diamond",
         ]
     });
+    event.custom(/**
+        * @type {Internal.RecipeJS}
+        */{
+            type: 'mna:manaweaving-recipe',
+            tier: 1,
+            output: Item.of("irons_spellbooks:iron_spell_book"),
+            quantity: 1,
+            items: [
+                'minecraft:book',
+                'minecraft:iron_ingot',
+                'mna:vinteum_dust'
+            ],
+            patterns: [
+                "mna:manaweave_patterns/circle",
+                "mna:manaweave_patterns/square",
+                "mna:manaweave_patterns/circle",
+            ]
+        }
+    )
 })
