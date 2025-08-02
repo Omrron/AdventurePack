@@ -2,6 +2,14 @@
   "bookGuiScale": 0,
   "clickedVisualize": false,
   "bookData": {
+    "l2backpack:backpack_guide": {
+      "viewedEntries": [
+        "l2backpack:items/2_dimensional_storages",
+        "l2backpack:items/1_backpacks"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "distant_worlds:garhenna_book": {
       "viewedEntries": [
         "distant_worlds:garhenna_natural/fuzianna",
@@ -51,6 +59,21 @@
         "hexalia:equipment/earplugs",
         "hexalia:equipment/ghostveil",
         "hexalia:world_gen/structures"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "irons_spellbooks:iss_guide_book": {
+      "viewedEntries": [
+        "irons_spellbooks:progression/early_game",
+        "irons_spellbooks:schools"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "l2artifacts:artifact_guide": {
+      "viewedEntries": [
+        "l2artifacts:general/a5_upgrade"
       ],
       "bookmarks": [],
       "completedManualQuests": []
