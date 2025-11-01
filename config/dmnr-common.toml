@@ -4,8 +4,8 @@
 	"Can conjure fluid ignore vaporize?" = true
 	"If true: The Mark Component supports PlayerCharms" = true
 	"If true: The Alternative Recall Component supports PlayerCharms" = true
-	"By what factor is the damage increased with the Minotaur Belt?" = 2
 	"This number indicates the factor by which the cooldown is increased when casting the spell via the Bracelet of Spell Storing - Cooldown:" = 10
+	"If true: The range of the Alternative Recall Component is unlimited when the range attribute is at maximum level? " = true
 
 ["Upgrade Configs"]
 
@@ -13,25 +13,15 @@
 		#Range: 0 ~ 33
 		"By what percentage is the damage reduced by the damage resistance upgrade (in %):" = 20
 
-	["Upgrade Configs"."Elytra upgrade"]
-		#Range: 0 ~ 500
-		"How much mana is consumed every tick when the wearer flies with the Elytra upgrade (The values are divided by 100):" = 75
-		#Range: 0 ~ 200
-		" How much mana does the fire resistance upgrade consume for one tick of fire damage?:" = 20
-
 	["Upgrade Configs"."Fly upgrade"]
 		#The airspeed is calculated with this value v. (Airspeed = v * upgrade level / 100). The default Creaktiv flight speed is 0.5
 		#Range: 0 ~ 10
 		"Flight Speed per Level:" = 2
 		"Can the wearer sprint in the air with the Fly Upgrade?" = true
-		#Range: 0 ~ 500
-		"Mana cost per flight tick (The values are divided by 100):" = 75
 
 	["Upgrade Configs"."Meteor Jump upgrade"]
 		#Range: 1 ~ 5
 		"Strength of the Impact:" = 3
-		#Range: 0 ~ 400
-		"Mana cost per meteor jump:" = 40
 
 	["Upgrade Configs"."Projectile Reflection"]
 		#Range: 20 ~ 4000
@@ -41,11 +31,11 @@
 		#Range: 0 ~ 200
 		"Mana cost per nutrition:" = 15
 
-	["Upgrade Configs"."Speed upgrade"]
-		#Range: 0 ~ 100
-		"Mana cost per speed tick per level (The values are divided by 100):" = 25
-
 	["Upgrade Configs"."Waterbreathing upgrade"]
 		#Range: 0 ~ 100
 		"Mana cost per oxigen bubble:" = 20
+
+	["Upgrade Configs"."Fire Resistance upgrade"]
+		#Range: 0 ~ 200
+		"How much mana does the fire resistance upgrade consume for one tick of fire damage?" = 20
 
