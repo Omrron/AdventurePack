@@ -26,3 +26,4 @@ screenshots
 *.dll.x
 /downloads
 emi.json
+fabricloader.log
