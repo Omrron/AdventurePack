@@ -29,4 +29,5 @@ emi.json
 fabricloader.log
 *.log
 /xaero
+XaeroWaypoints_BACKUP*
 patchouli_data.json
