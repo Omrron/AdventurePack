@@ -1,0 +1,267 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "692089893F81AFA7"
+	icon: {
+		Count: 1
+		id: "l2backpack:backpack_white"
+		tag: { }
+	}
+	id: "3506FAE6F10AA28D"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["You should read the book about all the things they can do. A correct setup can allow you to hold A MILLION items"]
+			icon: {
+				Count: 1
+				id: "l2backpack:backpack_white"
+				tag: {
+					Items: [
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+						{
+							Count: 1b
+							id: "minecraft:air"
+							tag: {
+								Damage: 0
+							}
+						}
+					]
+					container_id: [I;
+						110139293
+						2138326456
+						-1620751427
+						917828473
+					]
+					init: 1b
+					rows: 2
+				}
+			}
+			id: "2DB3BADD8CBEE728"
+			tasks: [{
+				id: "1AB0A40C4E96D59C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "l2backpack:backpacks"
+					}
+				}
+				title: "Any #l2backpack:backpacks"
+				type: "item"
+			}]
+			title: "A bag for your back"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			id: "1CF58929548F4ECE"
+			subtitle: "A more \"sophisticated\" form of storage"
+			tasks: [{
+				id: "1C46377929F2241E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "sophisticatedstorage:base_tier_wooden_storage"
+					}
+				}
+				title: "Any sophisticated storage basic chest"
+				type: "item"
+			}]
+			title: "Basic Chests"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1CF58929548F4ECE"]
+			id: "46FD41654A334E56"
+			subtitle: "for your storage"
+			tasks: [{
+				id: "2052F3230E45EFF5"
+				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				type: "item"
+			}]
+			title: "Acquire Hardware"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["46FD41654A334E56"]
+			id: "24995B67C8B19266"
+			tasks: [{
+				id: "15EA410BA39FEE9F"
+				item: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+				type: "item"
+			}]
+			title: "Shiny \"New\" Chests"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["24995B67C8B19266"]
+			id: "5CDD2782043BE71D"
+			subtitle: "More than just for looks"
+			tasks: [{
+				id: "452A0D7A1550E5D9"
+				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+				type: "item"
+			}]
+			title: "Diamonds Storage"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5CDD2782043BE71D"]
+			id: "5560CD979C61B8E9"
+			subtitle: "Kinda overkill isn't it?"
+			tasks: [{
+				id: "38ACA0874EA44500"
+				item: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+				type: "item"
+			}]
+			title: "Even More Storage"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			id: "6A5FC2EFE9107FDC"
+			subtitle: "Keeping storage simple and functional"
+			tasks: [{
+				id: "09D3140E605FC804"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Any functional storage drawer"
+				type: "item"
+			}]
+			title: "Drawers"
+			x: 0.5d
+			y: 0.5d
+		}
+	]
+	title: "Storage"
+}

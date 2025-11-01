@@ -28,3 +28,5 @@ screenshots
 emi.json
 fabricloader.log
 *.log
+/xaero
+patchouli_data.json

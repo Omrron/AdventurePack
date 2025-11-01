@@ -315,6 +315,7 @@
 			y: -7.0d
 		}
 		{
+			dependencies: ["693322F09812625E"]
 			id: "5D7CCF786458F746"
 			tasks: [{
 				id: "197EC0D98F014F6D"
@@ -333,7 +334,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["464601CFC657DC27"]
+			dependencies: [
+				"464601CFC657DC27"
+				"458E1E5888CB2E9C"
+			]
 			id: "56A3FA5EB8130874"
 			tasks: [{
 				id: "6A9820BB9DCF8997"
@@ -352,6 +356,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["168CAF9B0A559E30"]
 			id: "49CC39C494B73D0C"
 			tasks: [{
 				id: "062466A3F3E76363"
@@ -370,7 +375,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["795A519CAF070290"]
+			dependencies: ["60586CB4458419EF"]
 			id: "458E1E5888CB2E9C"
 			tasks: [{
 				id: "5221150FDF528C54"
@@ -410,23 +415,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["7095E9B49DAD9941"]
-			description: ["in case your having a hard time finding hexalia's mystical plants, we added some recipes to help you get started!"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "795A519CAF070290"
-			optional: true
-			tasks: [{
-				id: "7288402936C92CFA"
-				title: "confirm"
-				type: "checkmark"
-			}]
-			title: "Weaving Magic Into Plants"
-			x: -13.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["795A519CAF070290"]
+			dependencies: ["60586CB4458419EF"]
 			id: "693322F09812625E"
 			optional: true
 			progression_mode: "linear"
@@ -447,7 +436,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["795A519CAF070290"]
+			dependencies: ["60586CB4458419EF"]
 			id: "168CAF9B0A559E30"
 			optional: true
 			tasks: [{
@@ -508,7 +497,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
+			x: -13.5d
 			y: 2.0d
 		}
 		{
@@ -591,6 +580,61 @@
 			}]
 			x: -12.0d
 			y: -9.5d
+		}
+		{
+			dependencies: [
+				"21A25D61A1BC13DB"
+				"46749AE827581AD4"
+			]
+			description: ["Can be used to transform plants into hexalia plants"]
+			id: "60586CB4458419EF"
+			subtitle: "A familiar name"
+			tasks: [{
+				id: "37FBC8378666A98B"
+				item: "hexalia:mutavis"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -2.0d
+		}
+		{
+			description: ["Use the athame on dark oak to strip the wood and get the resin"]
+			id: "46749AE827581AD4"
+			subtitle: "O' Rubber Tree ♪"
+			tasks: [
+				{
+					id: "7AF2EC8A954CC29D"
+					item: {
+						Count: 1
+						id: "hexalia:athame"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "1AB57F05FFC3654E"
+					item: { Count: 6, id: "hexalia:tree_resin" }
+					type: "item"
+				}
+			]
+			title: "Sticky Situation"
+			x: -16.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["60586CB4458419EF"]
+			id: "75950554CC3E84E8"
+			optional: true
+			tasks: [{
+				id: "4E016CAF751C234D"
+				item: "hexalia:verdant_grimoire"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 0.5d
 		}
 	]
 	title: "Chapter 1: magical beginnings"
