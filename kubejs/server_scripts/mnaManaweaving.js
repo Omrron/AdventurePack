@@ -12,6 +12,18 @@ ServerEvents.recipes(event => {
             "mna:manaweave_patterns/triangle"
         ],
     });
+
+    event.custom({
+        type: "mna:manaweaving-recipe",
+        tier: 1,
+        output: "hexalia:athame",
+        quantity: 1,
+        items: ["minecraft:stick", "minecraft:flint", "mna:vinteum_dust"],
+        patterns: [
+            "mna:manaweave_patterns/slash",
+            "mna:manaweave_patterns/backslash",
+        ],
+    });
     
     event.custom(/**
         * @type {Internal.RecipeJS}

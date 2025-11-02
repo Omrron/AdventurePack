@@ -9,6 +9,9 @@ ServerEvents.recipes((event) => {
     const filters = [{mod:"irons_spellbooks"}, {type:"irons_spellbooks:scroll_forge"}];
     removeRecipeFromStage(filters, "one", event);
 
+    event.remove({ output: 'hexalia:athame' })
+
+
     // stage one
     removeRecipeFromStage([{input: 'minecraft:diamond'}, {input: 'minecraft:emerald'}], 'one', event);
     removeRecipeFromStage([{input: 'minecraft:diamond', type: 'mna:manaweaving-recipe'}, {input: 'minecraft:emerald', type: 'mna:manaweaving-recipe'}], 'one', event);

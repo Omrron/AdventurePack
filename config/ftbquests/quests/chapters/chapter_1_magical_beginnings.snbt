@@ -110,10 +110,8 @@
 				"47445B095D6EEE95"
 				"480B627DC2CBF88B"
 				"47939E19A2EE7416"
-				"0BEF6E764E8FB5BE"
-				"1E97514F19481214"
 				"6E5F56AAAE02E781"
-				"7095E9B49DAD9941"
+				"67D795138452C742"
 			]
 			description: [
 				"the rite of first ascension is the first set of stairs you must climb to reach enlightenment."
@@ -122,11 +120,6 @@
 			]
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"celestisynth:celestisynthitemstackcapabilities": {
-						cs.aquaSkin: 0
-					}
-				}
 				id: "mutantmonsters:mutant_skeleton_skull"
 				tag: {
 					Damage: 0
@@ -152,47 +145,6 @@
 			title: "the rite of first ascension"
 			x: -2.5d
 			y: -2.5d
-		}
-		{
-			dependencies: ["07FE11B093DBEFFA"]
-			id: "1E97514F19481214"
-			tasks: [{
-				id: "7EB3C7FD84B818E2"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "mna:wizard_chalk"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -3.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["07FE11B093DBEFFA"]
-			id: "0BEF6E764E8FB5BE"
-			tasks: [{
-				id: "04FE587CAC6C7576"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "mna:purified_vinteum_dust"
-				}
-				type: "item"
-			}]
-			x: -1.5d
-			y: 0.0d
 		}
 		{
 			description: ["the rite of first ascension is quite difficult, we recommend you gear is in order before attempting it"]
@@ -247,7 +199,7 @@
 				type: "item"
 			}]
 			title: "Welcome to Mana and Artifice"
-			x: -2.5d
+			x: -13.5d
 			y: 2.0d
 		}
 		{
@@ -288,6 +240,10 @@
 			y: -5.5d
 		}
 		{
+			description: [
+				"Theurgy provides a cheap divination rod that allows scanning the area for budding amethyst blocks"
+				"The closer you are the darker the gem"
+			]
 			id: "29A37A184A4A606C"
 			optional: true
 			shape: "circle"
@@ -456,7 +412,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["07FE11B093DBEFFA"]
+			dependencies: ["21A25D61A1BC13DB"]
 			id: "7095E9B49DAD9941"
 			tasks: [{
 				advancement: "mna:tier_1/obtain_manaweaving_altar"
@@ -473,15 +429,12 @@
 				id: "4BB568E14017E671"
 				type: "advancement"
 			}]
-			title: "the art of manaweaving"
-			x: -5.0d
-			y: 0.0d
+			title: "The Art of Manaweaving"
+			x: -11.0d
+			y: 0.5d
 		}
 		{
-			dependencies: [
-				"07FE11B093DBEFFA"
-				"7095E9B49DAD9941"
-			]
+			dependencies: ["07FE11B093DBEFFA"]
 			id: "21A25D61A1BC13DB"
 			optional: true
 			tasks: [{
@@ -498,7 +451,7 @@
 				type: "item"
 			}]
 			x: -13.5d
-			y: 2.0d
+			y: 0.5d
 		}
 		{
 			id: "62D4C07589C645FF"
@@ -516,8 +469,8 @@
 				type: "item"
 			}]
 			title: "An introduction to the arcane arts"
-			x: -2.5d
-			y: 4.0d
+			x: -13.5d
+			y: 3.5d
 		}
 		{
 			description: [
@@ -547,6 +500,7 @@
 			y: -7.0d
 		}
 		{
+			dependencies: ["67D795138452C742"]
 			description: [
 				"Mana and Artifice provides a pretty awesome way of locating any structure you want, its called: the thaumaturgic compass!"
 				""
@@ -562,10 +516,11 @@
 				title: "thaumaturgic locating"
 				type: "checkmark"
 			}]
-			x: -14.5d
-			y: -9.5d
+			x: -5.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["67D795138452C742"]
 			description: [
 				"dont really have to follow this one, its just a personal recommendation from me to you:"
 				""
@@ -578,8 +533,8 @@
 				title: "recomended first spell"
 				type: "checkmark"
 			}]
-			x: -12.0d
-			y: -9.5d
+			x: -3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -633,7 +588,38 @@
 				item: "hexalia:verdant_grimoire"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -13.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7095E9B49DAD9941"]
+			description: ["This table will alow you to create spells"]
+			id: "67D795138452C742"
+			tasks: [
+				{
+					id: "02212B08AF53DF10"
+					item: "mna:inscription_table"
+					type: "item"
+				}
+				{
+					id: "08671ECE968C4E0A"
+					item: {
+						Count: 1
+						id: "mna:wizard_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "64637F44722E1C0F"
+					item: "mna:purified_vinteum_dust"
+					type: "item"
+				}
+			]
+			title: "Getting Magical"
+			x: -5.5d
 			y: 0.5d
 		}
 	]
