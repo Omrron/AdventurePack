@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "spell_exchange"
-	group: ""
+	group: "69B17D32CFAE4060"
 	id: "68BE12CDD5A11687"
 	order_index: 0
 	quest_links: [ ]

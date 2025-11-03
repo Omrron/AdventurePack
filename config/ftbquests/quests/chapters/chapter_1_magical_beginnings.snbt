@@ -5,11 +5,6 @@
 	group: "06D39EEDC696AD5A"
 	icon: {
 		Count: 1
-		ForgeCaps: {
-			"celestisynth:celestisynthitemstackcapabilities": {
-				cs.aquaSkin: 0
-			}
-		}
 		id: "mutantmonsters:mutant_skeleton_skull"
 		tag: {
 			Damage: 0
@@ -273,6 +268,7 @@
 		{
 			dependencies: ["693322F09812625E"]
 			id: "5D7CCF786458F746"
+			subtitle: "Raise the sun \\o/"
 			tasks: [{
 				id: "197EC0D98F014F6D"
 				item: {
@@ -454,6 +450,10 @@
 			y: 0.5d
 		}
 		{
+			description: [
+				"The book contains detailed descriptions of all aspects in the mod."
+				"It is highly recomended you consult it whenever you arent sure about something"
+			]
 			id: "62D4C07589C645FF"
 			tasks: [{
 				id: "45D38FE5642CBDA3"
@@ -482,6 +482,7 @@
 				"satisfaction gurranteed!"
 			]
 			id: "6D007C45E0AADAD0"
+			optional: true
 			tasks: [{
 				id: "3AA2007A9E3F5871"
 				item: {
@@ -511,6 +512,7 @@
 				"the thaumaturgic links can all be bought from the wandering wizard (summoned through the ritual of the wandering wizard) for one ventium ingot a piece"
 			]
 			id: "47F5FD6DA30A98A5"
+			optional: true
 			tasks: [{
 				id: "330A453493301213"
 				title: "thaumaturgic locating"
@@ -520,7 +522,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["67D795138452C742"]
+			dependencies: ["089F465754D666CF"]
 			description: [
 				"dont really have to follow this one, its just a personal recommendation from me to you:"
 				""
@@ -528,12 +530,13 @@
 				"it provides stone pickaxe level mining with insta-breaking, and its a great way to save on iron pickaxe durability early on as well as training you mana level."
 			]
 			id: "15F95B6B2D83A761"
+			optional: true
 			tasks: [{
 				id: "6F642C709C067595"
 				title: "recomended first spell"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: -2.5d
 			y: 0.5d
 		}
 		{
@@ -592,8 +595,13 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["7095E9B49DAD9941"]
-			description: ["This table will alow you to create spells"]
+			dependencies: ["0E2C1C00776ED5D5"]
+			description: [
+				"This table will alow you to create spells"
+				""
+				"BTW you can make vellum by r-clicking leather on a water filled cauldron"
+			]
+			icon: "mna:inscription_table"
 			id: "67D795138452C742"
 			tasks: [
 				{
@@ -620,6 +628,48 @@
 			]
 			title: "Getting Magical"
 			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["67D795138452C742"]
+			id: "089F465754D666CF"
+			tasks: [
+				{
+					id: "1D01A6A4135E20A5"
+					item: {
+						Count: 1
+						id: "mna:arcanist_ink"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "067EF26E0C90F44E"
+					item: { Count: 16, id: "minecraft:paper" }
+					type: "item"
+				}
+				{
+					id: "4481FC2A4D9D75E0"
+					item: "mna:arcane_ash"
+					type: "item"
+				}
+			]
+			title: "Spell Reagents"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7095E9B49DAD9941"]
+			id: "0E2C1C00776ED5D5"
+			tasks: [{
+				id: "5401FAC74967F986"
+				item: "mna:runeforge"
+				type: "item"
+			}]
+			x: -8.5d
 			y: 0.5d
 		}
 	]
