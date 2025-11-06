@@ -1,86 +1,93 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
+  event.custom({
+    type: "mna:manaweaving-recipe",
+    tier: 1,
+    output: "hexalia:mutavis",
+    quantity: 1,
+    items: [
+      "minecraft:potato",
+      "hexalia:tree_resin",
+      "minecraft:kelp",
+      "minecraft:poppy",
+      "minecraft:wheat_seeds",
+      "minecraft:bone_meal",
+    ],
+    patterns: [
+      "mna:manaweave_patterns/circle",
+      "mna:manaweave_patterns/square",
+      "mna:manaweave_patterns/triangle",
+    ],
+  });
 
-    event.custom({
-        type: "mna:manaweaving-recipe",
-        tier: 1,
-        output: "hexalia:mutavis",
-        quantity: 1,
-        items: ["minecraft:potato", "hexalia:tree_resin", "minecraft:kelp", "minecraft:poppy", "minecraft:wheat_seeds", "minecraft:bone_meal"],
-        patterns: [
-            "mna:manaweave_patterns/circle",
-            "mna:manaweave_patterns/square",
-            "mna:manaweave_patterns/triangle"
-        ],
-    });
+  event.custom({
+    type: "mna:manaweaving-recipe",
+    tier: 1,
+    output: "hexalia:athame",
+    quantity: 1,
+    items: ["minecraft:stick", "minecraft:flint", "mna:vinteum_dust"],
+    patterns: [
+      "mna:manaweave_patterns/slash",
+      "mna:manaweave_patterns/backslash",
+    ],
+  });
 
-    event.custom({
-        type: "mna:manaweaving-recipe",
-        tier: 1,
-        output: "hexalia:athame",
-        quantity: 1,
-        items: ["minecraft:stick", "minecraft:flint", "mna:vinteum_dust"],
-        patterns: [
-            "mna:manaweave_patterns/slash",
-            "mna:manaweave_patterns/backslash",
-        ],
-    });
-    
-    event.custom(/**
-        * @type {Internal.RecipeJS}
-        */{
-        type: "mna:manaweaving-recipe",
-        tier: 3,
-        output: Item.of("irons_spellbooks:common_ink"),
-        items: [
-            "minecraft:ink_sac",
-            "irons_spellbooks:arcane_essence",
-            "mna:chimerite_gem",
-            "minecraft:glass_bottle",
-        ],
-        patterns: [
-            "mna:manaweave_patterns/circle",
-            "mna:manaweave_patterns/knot",
-            "mna:manaweave_patterns/knot2",
-            "mna:manaweave_patterns/diamond",
-        ]
-    });
-    event.custom(/**
-        * @type {Internal.RecipeJS}
-        */{
-        type: "mna:manaweaving-recipe",
-        tier: 3,
-        output: Item.of("irons_spellbooks:common_ink"),
-        quantity: 8,
-        items: [
-            "minecraft:ink_sac",
-            "irons_spellbooks:arcane_essence",
-            "minecraft:nether_star",
-            "minecraft:glass_bottle",
-        ],
-        patterns: [
-            "mna:manaweave_patterns/circle",
-            "mna:manaweave_patterns/knot",
-            "mna:manaweave_patterns/knot2",
-            "mna:manaweave_patterns/diamond",
-        ]
-    });
-    event.custom(/**
-        * @type {Internal.RecipeJS}
-        */{
-            type: "mna:manaweaving-recipe",
-            tier: 1,
-            output: Item.of("irons_spellbooks:iron_spell_book"),
-            quantity: 1,
-            items: [
-                "minecraft:book",
-                "minecraft:iron_ingot",
-                "mna:vinteum_dust"
-            ],
-            patterns: [
-                "mna:manaweave_patterns/circle",
-                "mna:manaweave_patterns/square",
-                "mna:manaweave_patterns/circle",
-            ]
-        }
-    )
-})
+  event.custom(
+    /**
+     * @type {Internal.RecipeJS}
+     */ {
+      type: "mna:manaweaving-recipe",
+      tier: 3,
+      output: Item.of("irons_spellbooks:common_ink"),
+      items: [
+        "minecraft:ink_sac",
+        "irons_spellbooks:arcane_essence",
+        "mna:chimerite_gem",
+        "minecraft:glass_bottle",
+      ],
+      patterns: [
+        "mna:manaweave_patterns/circle",
+        "mna:manaweave_patterns/knot",
+        "mna:manaweave_patterns/knot2",
+        "mna:manaweave_patterns/diamond",
+      ],
+    }
+  );
+  event.custom(
+    /**
+     * @type {Internal.RecipeJS}
+     */ {
+      type: "mna:manaweaving-recipe",
+      tier: 3,
+      output: Item.of("irons_spellbooks:common_ink"),
+      quantity: 8,
+      items: [
+        "minecraft:ink_sac",
+        "irons_spellbooks:arcane_essence",
+        "minecraft:nether_star",
+        "minecraft:glass_bottle",
+      ],
+      patterns: [
+        "mna:manaweave_patterns/circle",
+        "mna:manaweave_patterns/knot",
+        "mna:manaweave_patterns/knot2",
+        "mna:manaweave_patterns/diamond",
+      ],
+    }
+  );
+  event.custom(
+    /**
+     * @type {Internal.RecipeJS}
+     */ {
+      type: "mna:manaweaving-recipe",
+      tier: 1,
+      output: Item.of("irons_spellbooks:iron_spell_book"),
+      quantity: 1,
+      items: ["minecraft:book", "minecraft:iron_ingot", "mna:vinteum_dust"],
+      patterns: [
+        "mna:manaweave_patterns/circle",
+        "mna:manaweave_patterns/square",
+        "mna:manaweave_patterns/circle",
+      ],
+    }
+  );
+});

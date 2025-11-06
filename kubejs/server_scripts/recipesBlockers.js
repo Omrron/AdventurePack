@@ -2,21 +2,51 @@
  * @param {Internal.RecipesEventJS} event
  */
 ServerEvents.recipes((event) => {
-    /**
-     * @param {Internal.RecipeFilter_[]}
-     * @param {Internal.Ingredient_} ouput
-     */
-    const filters = [{mod:"irons_spellbooks"}, {type:"irons_spellbooks:scroll_forge"}];
-    removeRecipeFromStage(filters, "one", event);
+  /**
+   * @param {Internal.RecipeFilter_[]}
+   * @param {Internal.Ingredient_} ouput
+   */
+  const filters = [
+    { mod: "irons_spellbooks" },
+    { type: "irons_spellbooks:scroll_forge" },
+  ];
+  removeRecipeFromStage(filters, "one", event);
 
-    event.remove({ output: 'hexalia:athame' })
+  event.remove({ output: "hexalia:athame" });
+  event.remove({ output: "hexalia:fire_node" });
+  event.remove({ output: "hexalia:water_node" });
+  event.remove({ output: "hexalia:earth_node" });
+  event.remove({ output: "hexalia:air_node" });
 
-
-    // stage one
-    removeRecipeFromStage([{input: 'minecraft:diamond'}, {input: 'minecraft:emerald'}], 'one', event);
-    removeRecipeFromStage([{input: 'minecraft:diamond', type: 'mna:manaweaving-recipe'}, {input: 'minecraft:emerald', type: 'mna:manaweaving-recipe'}], 'one', event);
-    removeRecipeFromStage([{input: 'minecraft:diamond', type: 'create:mechanical_crafting'}, {input: 'minecraft:emerald', type: 'create:mechanical_crafting'}], 'one', event);
-    removeRecipeFromStage([{input: 'minecraft:diamond', type: 'create:mixing'}, {input: 'minecraft:emerald', type: 'create:mixing'}], 'one', event);
-    removeRecipeFromStage([{mod: 'create'}], 'one', event);
+  // stage one
+  removeRecipeFromStage(
+    [{ input: "minecraft:diamond" }, { input: "minecraft:emerald" }],
+    "one",
+    event
+  );
+  removeRecipeFromStage(
+    [
+      { input: "minecraft:diamond", type: "mna:manaweaving-recipe" },
+      { input: "minecraft:emerald", type: "mna:manaweaving-recipe" },
+    ],
+    "one",
+    event
+  );
+  removeRecipeFromStage(
+    [
+      { input: "minecraft:diamond", type: "create:mechanical_crafting" },
+      { input: "minecraft:emerald", type: "create:mechanical_crafting" },
+    ],
+    "one",
+    event
+  );
+  removeRecipeFromStage(
+    [
+      { input: "minecraft:diamond", type: "create:mixing" },
+      { input: "minecraft:emerald", type: "create:mixing" },
+    ],
+    "one",
+    event
+  );
+  removeRecipeFromStage([{ mod: "create" }], "one", event);
 });
-
