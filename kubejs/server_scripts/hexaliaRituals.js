@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
         item: "hexalia:sunfire_tomato",
       },
       {
-        item: "minecraft:dandelion",
+        item: "minecraft:sunflower",
       },
     ],
     output: {
@@ -30,10 +30,28 @@ ServerEvents.recipes((event) => {
         item: "minecraft:amethyst_shard",
       },
       {
-        item: "hexalia:sunfire_tomato",
+        item: "hexalia:galeberries",
       },
       {
-        item: "minecraft:dandelion",
+        item: "minecraft:feather",
+      },
+    ],
+    output: {
+      item: "hexalia:air_node",
+    },
+  });
+
+  event.custom({
+    type: "hexalia:ritual_table",
+    ingredients: [
+      {
+        item: "minecraft:amethyst_shard",
+      },
+      {
+        item: "hexalia:siren_paste",
+      },
+      {
+        item: "minecraft:ink_sac",
       },
     ],
     output: {
@@ -48,32 +66,14 @@ ServerEvents.recipes((event) => {
         item: "minecraft:amethyst_shard",
       },
       {
-        item: "hexalia:sunfire_tomato",
+        item: "hexalia:mandrake",
       },
       {
-        item: "minecraft:dandelion",
+        item: "minecraft:clay_ball",
       },
     ],
     output: {
       item: "hexalia:earth_node",
-    },
-  });
-
-  event.custom({
-    type: "hexalia:ritual_table",
-    ingredients: [
-      {
-        item: "minecraft:amethyst_shard",
-      },
-      {
-        item: "hexalia:sunfire_tomato",
-      },
-      {
-        item: "minecraft:dandelion",
-      },
-    ],
-    output: {
-      item: "hexalia:air_node",
     },
   });
 });
