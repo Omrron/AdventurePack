@@ -514,7 +514,7 @@
 				type: "checkmark"
 			}]
 			x: -2.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["46749AE827581AD4"]
@@ -688,6 +688,17 @@
 			title: "Celestial Bloom"
 			x: -11.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["089F465754D666CF"]
+			id: "61EE6164454D41AB"
+			tasks: [{
+				id: "01D14B0AC18DCDEE"
+				item: "mna:spell_book"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
 		}
 	]
 	title: "Chapter 1: magical beginnings"
