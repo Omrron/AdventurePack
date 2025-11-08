@@ -700,6 +700,16 @@
 			x: -2.5d
 			y: 0.0d
 		}
+		{
+			id: "04663B07FB27275C"
+			tasks: [{
+				id: "6A639110F302EF14"
+				title: "pow"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 2.5d
+		}
 	]
 	title: "Chapter 1: magical beginnings"
 }

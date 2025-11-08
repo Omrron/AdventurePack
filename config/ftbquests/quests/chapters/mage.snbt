@@ -1,0 +1,735 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "mage"
+	group: "015CD5C4B58C54E9"
+	hide_quest_until_deps_complete: true
+	id: "38E519F8AFBA8747"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			icon: "irons_spellbooks:cooldown_upgrade_orb"
+			id: "39884B6ACE83F579"
+			progression_mode: "linear"
+			rewards: [
+				{
+					command: "/attribute @p minecraft:generic.max_health modifier add 0-0-0-0-1 HEALTH_BOOST 0.1 multiply"
+					icon: "dmnr:regeneration_amulet"
+					id: "38169F6790DD805C"
+					silent: true
+					title: "+10% Max HP"
+					type: "command"
+				}
+				{
+					command: "/attribute @p minecraft:generic.max_health modifier add 0-0-0-0-1 HEALTH_BOOST 0.1 multiply"
+					id: "6334FBEDDA74D1EC"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "23571018DA3A0CC2"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "+10% max health"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "59E36EB0AFC59388"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_needles base set 1"
+				elevate_perms: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "574859FA026E4913"
+				silent: true
+				team_reward: false
+				title: "Acquire Skill: Blood Needles"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "465FB07121A10855"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Needles lv.1"
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["59E36EB0AFC59388"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "233B1DE40E269880"
+			rewards: [{
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_needles base set 2"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "422486CA4F41E3EE"
+				silent: true
+				title: "Upgrade skill to lv.2"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "16D422B86D7C784B"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Needles lv.2"
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["233B1DE40E269880"]
+			disable_toast: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "42BF89ED571EFAD9"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_needles base set 3"
+				elevate_perms: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "232657BDCEE54886"
+				silent: true
+				team_reward: false
+				title: "Upgrade skill to lv.3"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "7C365A748CA61DCB"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Needles lv.3"
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["42BF89ED571EFAD9"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "4BEB21C28B8FA1EF"
+			rewards: [{
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_needles base set 4"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "322A52C7C72CF325"
+				silent: true
+				title: "Upgrade skill to lv.4"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "5D61ED3B77BB5456"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Needles lv.4"
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4BEB21C28B8FA1EF"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "69190D77E17FF919"
+			rewards: [{
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_needles base set 5"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "431CF7FA69844869"
+				silent: true
+				title: "Upgrade skill to lv.5"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "5EF206BE820DA986"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Needles lv.5"
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["69190D77E17FF919"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "5BF651C6B31B8BE8"
+			rewards: [{
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_needles base set 6"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "7507A80663A2955B"
+				silent: true
+				title: "Upgrade skill to lv.6"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "0D337F5E5114A150"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Needles lv.6"
+			x: -6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5BF651C6B31B8BE8"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "3579B66C9E9871A8"
+			rewards: [{
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_needles base set 7"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "6F91E170BBB65CA7"
+				silent: true
+				title: "Upgrade skill to lv.7"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "1C6C70DB9BDB8D3F"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Needles lv.7"
+			x: -6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3579B66C9E9871A8"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "58E9EB2F90E13B8A"
+			rewards: [{
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_needles base set 8"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "290F4032124E6948"
+				silent: true
+				title: "Upgrade skill to lv.8"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "52D5E495AED825B0"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Needles lv.8"
+			x: -6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["58E9EB2F90E13B8A"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "04AD7F154A914735"
+			rewards: [{
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_needles base set 9"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "744BA9B1E0054AAD"
+				silent: true
+				title: "Upgrade skill to lv.9"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "181AEE46A1311755"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Needles lv.9"
+			x: -6.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["04AD7F154A914735"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "692D13C541AFAA0F"
+			rewards: [{
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_needles base set 10"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "3F82240A47D6D772"
+				silent: true
+				title: "Upgrade skill to lv.10"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "7C020BB8CADAFFDA"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Needles lv.10"
+			x: -6.5d
+			y: 9.5d
+		}
+		{
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "4552EE96CA0C84EC"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_step base set 1"
+				elevate_perms: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "20A90AE50FBA6735"
+				silent: true
+				team_reward: false
+				title: "Acquire Skill: Blood Step"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "3E061F4BC82F0A45"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Step lv.1"
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4552EE96CA0C84EC"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "3EC421924C3F7AC0"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_step base set 2"
+				elevate_perms: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "37B70C121C1292D9"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.2"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "6279296A0012A161"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Step lv.2"
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3EC421924C3F7AC0"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "042FF7CD54E1B17C"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_step base set 3"
+				elevate_perms: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "37609E0BEE582544"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.3"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "4A7E278BAB982699"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Step lv.3"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["042FF7CD54E1B17C"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "601501EE6BB34974"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_step base set 4"
+				elevate_perms: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "6DFBB9B1F566D9ED"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.4"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "63408094BF34D1E5"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Step lv.4"
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["601501EE6BB34974"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:blood_needles"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "30D93DBD05D41CEE"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/blood_step base set 5"
+				elevate_perms: true
+				icon: "irons_spellbooks:blood_rune"
+				id: "384A4BE68CC34E22"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.5"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "181A4FD58D16168D"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Blood Step lv.5"
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			disable_toast: true
+			icon: "irons_spellbooks:mana_upgrade_orb"
+			id: "137EF8BEF66E6B88"
+			rewards: [{
+				command: "/say Hi, @p!"
+				id: "4A69AC595597D354"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "5EB1B3D2E9AB94A1"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "+10% Skill Mana"
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			disable_toast: true
+			icon: "irons_spellbooks:evocation_upgrade_orb"
+			id: "013C7D2C6002676D"
+			progression_mode: "linear"
+			rewards: [
+				{
+					command: "/attribute @p minecraft:generic.max_health modifier add 0-0-0-0-1 HEALTH_BOOST 0.1 multiply"
+					icon: "dmnr:regeneration_amulet"
+					id: "38D8E4BA0A482ECD"
+					silent: true
+					title: "+10% Max HP"
+					type: "command"
+				}
+				{
+					command: "/attribute @p minecraft:generic.max_health modifier add 0-0-0-0-1 HEALTH_BOOST 0.1 multiply"
+					id: "40ECA508ED508FC0"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "24363675B4997F84"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "+2% Movement Speed"
+			x: -3.5d
+			y: -1.5d
+		}
+	]
+	title: "Skillz"
+}
