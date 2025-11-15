@@ -8,9 +8,11 @@
 	icon: "irons_spellbooks:holy_upgrade_orb"
 	id: "38E519F8AFBA8747"
 	order_index: 0
+	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{
+			can_repeat: true
 			disable_toast: true
 			icon: "irons_spellbooks:cooldown_upgrade_orb"
 			id: "39884B6ACE83F579"
@@ -44,6 +46,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["0FDD9FB3680EC0FE"]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -82,7 +85,7 @@
 				type: "item"
 			}]
 			title: "Blood Needles lv.1"
-			x: -6.5d
+			x: -12.0d
 			y: 0.5d
 		}
 		{
@@ -124,7 +127,7 @@
 				type: "item"
 			}]
 			title: "Blood Needles lv.2"
-			x: -6.5d
+			x: -12.0d
 			y: 1.5d
 		}
 		{
@@ -168,7 +171,7 @@
 				type: "item"
 			}]
 			title: "Blood Needles lv.3"
-			x: -6.5d
+			x: -12.0d
 			y: 2.5d
 		}
 		{
@@ -210,7 +213,7 @@
 				type: "item"
 			}]
 			title: "Blood Needles lv.4"
-			x: -6.5d
+			x: -12.0d
 			y: 3.5d
 		}
 		{
@@ -252,7 +255,7 @@
 				type: "item"
 			}]
 			title: "Blood Needles lv.5"
-			x: -6.5d
+			x: -12.0d
 			y: 4.5d
 		}
 		{
@@ -294,7 +297,7 @@
 				type: "item"
 			}]
 			title: "Blood Needles lv.6"
-			x: -6.5d
+			x: -12.0d
 			y: 5.5d
 		}
 		{
@@ -336,7 +339,7 @@
 				type: "item"
 			}]
 			title: "Blood Needles lv.7"
-			x: -6.5d
+			x: -12.0d
 			y: 6.5d
 		}
 		{
@@ -378,7 +381,7 @@
 				type: "item"
 			}]
 			title: "Blood Needles lv.8"
-			x: -6.5d
+			x: -12.0d
 			y: 7.5d
 		}
 		{
@@ -420,7 +423,7 @@
 				type: "item"
 			}]
 			title: "Blood Needles lv.9"
-			x: -6.5d
+			x: -12.0d
 			y: 8.5d
 		}
 		{
@@ -462,10 +465,11 @@
 				type: "item"
 			}]
 			title: "Blood Needles lv.10"
-			x: -6.5d
+			x: -12.0d
 			y: 9.5d
 		}
 		{
+			dependencies: ["42BF89ED571EFAD9"]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -504,8 +508,8 @@
 				type: "item"
 			}]
 			title: "Blood Step lv.1"
-			x: -5.0d
-			y: 0.5d
+			x: -10.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4552EE96CA0C84EC"]
@@ -547,8 +551,8 @@
 				type: "item"
 			}]
 			title: "Blood Step lv.2"
-			x: -5.0d
-			y: 1.5d
+			x: -10.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3EC421924C3F7AC0"]
@@ -590,8 +594,8 @@
 				type: "item"
 			}]
 			title: "Blood Step lv.3"
-			x: -5.0d
-			y: 2.5d
+			x: -10.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["042FF7CD54E1B17C"]
@@ -633,8 +637,8 @@
 				type: "item"
 			}]
 			title: "Blood Step lv.4"
-			x: -5.0d
-			y: 3.5d
+			x: -10.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["601501EE6BB34974"]
@@ -676,10 +680,11 @@
 				type: "item"
 			}]
 			title: "Blood Step lv.5"
-			x: -5.0d
-			y: 4.5d
+			x: -10.5d
+			y: 6.5d
 		}
 		{
+			can_repeat: true
 			disable_toast: true
 			icon: "irons_spellbooks:mana_upgrade_orb"
 			id: "137EF8BEF66E6B88"
@@ -699,6 +704,7 @@
 			y: -1.5d
 		}
 		{
+			can_repeat: true
 			disable_toast: true
 			icon: "irons_spellbooks:evocation_upgrade_orb"
 			id: "013C7D2C6002676D"
@@ -723,6 +729,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["0FDD9FB3680EC0FE"]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -744,7 +751,7 @@
 			id: "5684C31A9257C24D"
 			rewards: [{
 				auto: "disabled"
-				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_bolt base set 1"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/firebolt base set 1"
 				elevate_perms: true
 				icon: "irons_spellbooks:fire_rune"
 				id: "245FF7DB7392F575"
@@ -787,7 +794,7 @@
 			id: "1899BE89424AA3DD"
 			rewards: [{
 				auto: "disabled"
-				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_bolt base set 2"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/firebolt base set 2"
 				elevate_perms: true
 				icon: "irons_spellbooks:fire_rune"
 				id: "25E483E7C8D2C4CC"
@@ -830,7 +837,7 @@
 			id: "6C0A439ECCFA5F33"
 			rewards: [{
 				auto: "disabled"
-				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_bolt base set 3"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/firebolt base set 3"
 				elevate_perms: true
 				icon: "irons_spellbooks:fire_rune"
 				id: "754C614A807A4B09"
@@ -1150,6 +1157,2466 @@
 			title: "Fire Bolt lv.9"
 			x: -3.5d
 			y: 8.5d
+		}
+		{
+			id: "0FDD9FB3680EC0FE"
+			max_completable_dependents: 1
+			tasks: [{
+				id: "7D2E1DC036281A95"
+				title: "Skillz"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["69C788E48EB0EC6A"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "54ADE491263C8F4E"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_ball base set 1"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "150B32115C1438EB"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Fire Ball Lv.1"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "2DF39A065658BC00"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Ball lv.1"
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["54ADE491263C8F4E"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "4C6A327D263FBFF1"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_ball base set 2"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "0FE8B52D467E231D"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.2"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "2226DE07012F1460"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Ball lv.2"
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4C6A327D263FBFF1"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "53A0FB1BDBB7F647"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_ball base set 3"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "39130E3C761C37A5"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.3"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "46802BBE20DBD511"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Ball lv.3"
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["53A0FB1BDBB7F647"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "764DAA681DF00C07"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_ball base set 4"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "1741E814BE69903A"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.4"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "1B9FBE4D2E495077"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Ball lv.4"
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["764DAA681DF00C07"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "40D0815E303ACC4E"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_ball base set 5"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "3C25EE273A31CC80"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.5"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "206C05307EA41280"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Ball lv.5"
+			x: -2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6C0A439ECCFA5F33"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "16A1E207EA049BF6"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_breath base set 1"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "66E63A245C116E9A"
+				silent: true
+				team_reward: false
+				title: "Unlock Skill Fire Breath Lv.1"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "1FB60FF81D5037A1"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Breath lv.1"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["16A1E207EA049BF6"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "16B4082505C69C53"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_breath base set 2"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "618D0EE7B6FE244E"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.2"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "47F2624BF153280E"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Breath lv.2"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["16B4082505C69C53"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "5229D878905F54C4"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_breath base set 3"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "3D917EAC28E275FB"
+				silent: true
+				team_reward: false
+				title: "Upgarde Skill to Lv.3"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "748C2EB1E034E63F"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Breath lv.3"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5229D878905F54C4"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "777B4F2CF5DEB4C7"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_breath base set 4"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "661A0A7F5F5A5415"
+				silent: true
+				team_reward: false
+				title: "Upgarde Skill to Lv.4"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "1F0B25BD7DEBACA4"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Breath lv.4"
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["777B4F2CF5DEB4C7"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "1BD2BFB8C2E45247"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_breath base set 5"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "1AC9A7D2788806E0"
+				silent: true
+				team_reward: false
+				title: "Upgarde Skill to Lv.5"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "156B6B0D8143FD26"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Breath lv.5"
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1BD2BFB8C2E45247"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "3BC91F5053F5F4A7"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_breath base set 6"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "5FC00242DB15D200"
+				silent: true
+				team_reward: false
+				title: "Upgarde Skill to Lv.6"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "0606FCF928685DC4"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Breath lv.6"
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3BC91F5053F5F4A7"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "77AE6BF18555A453"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_breath base set 7"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "48AA8A2D299082E2"
+				silent: true
+				team_reward: false
+				title: "Upgarde Skill to Lv.7"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "26FD4196C3C2F45A"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Breath lv.7"
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["77AE6BF18555A453"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "5905468989CECB9A"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_breath base set 8"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "1F9074E46197811D"
+				silent: true
+				team_reward: false
+				title: "Upgarde Skill to Lv.8"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "5C973BF2598BBC37"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Breath lv.8"
+			x: 1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["5905468989CECB9A"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "587BC9FE88193CB5"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_breath base set 9"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "39B33DC623FE1915"
+				silent: true
+				team_reward: false
+				title: "Upgarde Skill to Lv.9"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "0F67B823E7658870"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Breath lv.9"
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["587BC9FE88193CB5"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "001B75FB6E2FEC93"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_breath base set 10"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "096A0DAB35D44050"
+				silent: true
+				team_reward: false
+				title: "Upgarde Skill to Lv.10"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "57EB61BA0E34271C"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Breath lv.10"
+			x: 1.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["4770E7878A1CD68F"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "2159BDA576848D1E"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/scorch base set 1"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "591084633DA46BC6"
+				silent: true
+				team_reward: false
+				title: "Unlock Skill Scorch Lv.1"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "05008DD86DBDDB7B"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Scorch lv.1"
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2159BDA576848D1E"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "58E02190C834F5DA"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/scorch base set 2"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "16150E3E72E236B7"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.2"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "3B341B46718B013D"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Scorch lv.2"
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["58E02190C834F5DA"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "0F02C0A13ECF80E0"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/scorch base set 3"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "05F80562F2DB7383"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.3"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "03C3549D44B9291C"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Scorch lv.3"
+			x: -6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0F02C0A13ECF80E0"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "23DDB7E1171D9D6A"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/scorch base set 4"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "269FA587BB86C1E5"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.4"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "7D9FA5B75B73169B"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Scorch lv.4"
+			x: -6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["23DDB7E1171D9D6A"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "2CF97D863AD372DF"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/scorch base set 5"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "438C48A9B4D50A2D"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.5"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "2AB571737C850D60"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Scorch lv.5"
+			x: -6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1336DC704661DC4C"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "6AF2917607197A09"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/scorch base set 7"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "5E3B506BCFD97CC0"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.7"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "0571B327B2D2C7FD"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Scorch lv.7"
+			x: -6.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6AF2917607197A09"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "656C3092BC99A624"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/scorch base set 8"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "71679067E5DD92E6"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.8"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "602746FCAD3DBD38"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Scorch lv.8"
+			x: -6.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["656C3092BC99A624"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "22836C9C0C88840D"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/scorch base set 9"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "0DD2E1BAF48E17EC"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.9"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "1A848CF25C8115C3"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Scorch lv.9"
+			x: -6.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["22836C9C0C88840D"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "22D4EF353826C0E1"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/scorch base set 10"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "55ACC86930D282CD"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.10"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "5E9256B328A45C96"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Scorch lv.10"
+			x: -6.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["40D0815E303ACC4E"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "768EDAF7C22BA2CD"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_ball base set 6"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "3088917C189C512D"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.6"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "42021807040F9B1C"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Ball lv.6"
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["768EDAF7C22BA2CD"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "3BFF3AB4FF87D7DE"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_ball base set 7"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "081D9DD7DD6C8807"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.7"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "152CFFE5774D4FE7"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Ball lv.7"
+			x: -2.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["3BFF3AB4FF87D7DE"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "2D8DF97FBBD0685A"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_ball base set 8"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "50E10F7D259B82BA"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.8"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "7C1C98554C118AD5"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Ball lv.8"
+			x: -2.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["2D8DF97FBBD0685A"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "373D8948D6049D2E"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_ball base set 9"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "43133257490F6EB4"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.9"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "272A9B30B6DD49DD"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Ball lv.9"
+			x: -2.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["373D8948D6049D2E"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "23E7A3A910053A0F"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/fire_ball base set 10"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "080B7ABFA1EA5FB2"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.10"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "7ECD5F78D3BFC023"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Fire Ball lv.10"
+			x: -2.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["2CF97D863AD372DF"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "1336DC704661DC4C"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/scorch base set 6"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "3D5EDBDB2E1B53DD"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.6"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "22DD77F1432D0EE9"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Scorch lv.6"
+			x: -6.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["23DDB7E1171D9D6A"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "3C5D3F3E9B91DCD6"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/magma_bomb base set 1"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "5917F84C0D61EDB1"
+				silent: true
+				team_reward: false
+				title: "Unlock Skill Magma Bomb Lv.1"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "1058682327CFDD3E"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Magma Bomb Lv.1"
+			x: -7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6B0D61E424506B68"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "4D71071A42521CF1"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/heat_surge base set 1"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "56AFD22D8E9603FB"
+				silent: true
+				team_reward: false
+				title: "Unlock Skill Heat Surge Lv.1"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				disable_toast: true
+				id: "712D1D4338120FEE"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Heat Surge Lv.1"
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4D71071A42521CF1"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "0B1847DA62706064"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/heat_surge base set 2"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "2353356615542DAF"
+				silent: true
+				team_reward: false
+				title: "Unlock Skill Heat Surge Lv.2"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "481EB8F39709C89A"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Heat Surge Lv.2"
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0B1847DA62706064"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "528AF2E853ADA073"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/heat_surge base set 3"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "551566CD2F90F550"
+				silent: true
+				team_reward: false
+				title: "Unlock Skill Heat Surge Lv.3"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "3D9C945A9AB8DB46"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Heat Surge Lv.3"
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["528AF2E853ADA073"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "2B575AEEBF2B4BBD"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/heat_surge base set 4"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "46D9A6AD5266CE49"
+				silent: true
+				team_reward: false
+				title: "Unlock Skill Heat Surge Lv.4"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "70EC8CA5ED9B7DAB"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Heat Surge Lv.4"
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2B575AEEBF2B4BBD"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "0E122F9EC02977AC"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/heat_surge base set 5"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "4B5621CC91728CA1"
+				silent: true
+				team_reward: false
+				title: "Unlock Skill Heat Surge Lv.5"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "249D6DD31D0459F2"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Heat Surge Lv.5"
+			x: -5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3C5D3F3E9B91DCD6"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "2BA0BDB00D939F8E"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/magma_bomb base set 2"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "0FB8A57E2BCF91EC"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.2"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "35AE074093AEC59D"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Magma Bomb Lv.2"
+			x: -7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"23E7A3A910053A0F"
+				"22D4EF353826C0E1"
+				"0E122F9EC02977AC"
+				"001B75FB6E2FEC93"
+				"089572E4D32C36D6"
+				"4086A56DFC98296B"
+				"25D7E70F3B647303"
+			]
+			description: ["This spell affects a large area and will hurt you as well (although it won't target you directly) so be careful"]
+			disable_toast: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "362715CCF2D60875"
+			min_required_dependencies: 3
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/traveloptics/meteor_storm base set 10"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "25619CC54F86CF9E"
+				silent: true
+				team_reward: false
+				title: "Unlock Skill Meteor Shower"
+				type: "command"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "3D9B0C363838CD5D"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "&6Apex Spell Meteor Storm"
+			x: -2.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["2BA0BDB00D939F8E"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "19EDEDAB16CDD9B8"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/magma_bomb base set 3"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "6A85199F7CCAAFAF"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.3"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "083A5B1960214127"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Magma Bomb Lv.3"
+			x: -7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["19EDEDAB16CDD9B8"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "2F7AD6EBC26CD30A"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/magma_bomb base set 4"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "1B0993470087627C"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.4"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "717D35C35B2C17DF"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Magma Bomb Lv.4"
+			x: -7.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2F7AD6EBC26CD30A"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "17CEDD1E27C7F87B"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/magma_bomb base set 5"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "37644BFC3DFBFF07"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.5"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "480F1C604C198D71"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Magma Bomb Lv.5"
+			x: -7.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["17CEDD1E27C7F87B"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "1EE8AE938CD47A85"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/magma_bomb base set 6"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "6415FAEDD62836AC"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.6"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "27D15F8DEF149232"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Magma Bomb Lv.6"
+			x: -7.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["1EE8AE938CD47A85"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "69160B9FF9CD4CCA"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/magma_bomb base set 7"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "71EE3FAA2D90E07A"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.7"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "4F97C7B340C41832"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Magma Bomb Lv.7"
+			x: -7.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["69160B9FF9CD4CCA"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "75EF8965CD4FD45D"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/magma_bomb base set 8"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "1E6BC0B6F0CD44A9"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.8"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "1FCFD44C6614F0B8"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Magma Bomb Lv.8"
+			x: -7.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["75EF8965CD4FD45D"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "47884A3F9BB89DFF"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/magma_bomb base set 9"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "4EA3C283C14958A5"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.9"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "384979573009623C"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Magma Bomb Lv.9"
+			x: -7.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["47884A3F9BB89DFF"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "4086A56DFC98296B"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/magma_bomb base set 10"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "7D1BF1B6B0637D83"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.10"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				disable_toast: true
+				id: "7A415AC9C434B84A"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Magma Bomb Lv.10"
+			x: -7.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["6B0D61E424506B68"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "6F9FFFC5B0D62D3D"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/burning_dash base set 1"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "69E0E5B9D8A45FF2"
+				silent: true
+				team_reward: false
+				title: "Unlock Skill Burning Dash Lv.1"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				disable_toast: true
+				id: "3BAA4ADD986BF950"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Burning Dash Lv.1"
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6F9FFFC5B0D62D3D"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "5DD08049E881A62D"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/burning_dash base set 2"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "13214D6E95E367BB"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.2"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				disable_toast: true
+				id: "24A51F4C27A414AE"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Burning Dash Lv.2"
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5DD08049E881A62D"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "1D50462189161DF8"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/burning_dash base set 3"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "23D79143028A89C0"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.3"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				disable_toast: true
+				id: "271B3A1DA49CCE07"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Burning Dash Lv.3"
+			x: -1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1D50462189161DF8"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "4619D0291660AE39"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/burning_dash base set 4"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "0DD7CA8B29BD8E74"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.4"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				disable_toast: true
+				id: "6D9E752CD579F54C"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Burning Dash Lv.4"
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4619D0291660AE39"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "3E57A9B5C128B3E6"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/burning_dash base set 5"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "1A0CCE5CB859CBB9"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.5"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				disable_toast: true
+				id: "5148331E3D6A8E11"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Burning Dash Lv.5"
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3E57A9B5C128B3E6"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "09C26393A818E5EB"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/burning_dash base set 6"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "4F2E07E69E45AD46"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.6"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				disable_toast: true
+				id: "3AF03FF7540A2F3F"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Burning Dash Lv.6"
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["09C26393A818E5EB"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "23106898CC6B09D1"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/burning_dash base set 7"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "65A94180529AB262"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.7"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				disable_toast: true
+				id: "143592BBD269C479"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Burning Dash Lv.7"
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["23106898CC6B09D1"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "2535594122CEC43C"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/burning_dash base set 8"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "550360AE233F0F8A"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.8"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				disable_toast: true
+				id: "1DBA26FA6A4054B9"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Burning Dash Lv.8"
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2535594122CEC43C"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "537ADE48151B6F0B"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/burning_dash base set 9"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "3F4BC3084DBCB680"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.9"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				disable_toast: true
+				id: "0040C82549A97E6D"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Burning Dash Lv.9"
+			x: -1.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["537ADE48151B6F0B"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:firebolt"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "25D7E70F3B647303"
+			rewards: [{
+				auto: "disabled"
+				command: "/attribute @p additional_attributes:innate_spell/irons_spellbooks/burning_dash base set 10"
+				elevate_perms: true
+				icon: "irons_spellbooks:fire_rune"
+				id: "7FE0C95BC951F994"
+				silent: true
+				team_reward: false
+				title: "Upgrade Skill to Lv.10"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				disable_toast: true
+				id: "44A597D542C78C16"
+				item: "kubejs:skill_point"
+				type: "item"
+			}]
+			title: "Burning Dash Lv.10"
+			x: -1.0d
+			y: 14.5d
+		}
+		{
+			can_repeat: true
+			id: "6A690668A7DAC06F"
+			rewards: [{
+				command: "/say Hi, @p!"
+				id: "67D0F1AED2806BCE"
+				type: "command"
+			}]
+			subtitle: "Refunds all skills and resets progress in this quest page"
+			tasks: [{
+				id: "7048212FD39C8BD3"
+				title: "Reset Skills"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -2.5d
 		}
 	]
 	title: "Skillz"
