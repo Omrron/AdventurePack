@@ -157,6 +157,7 @@
 		}
 		{
 			dependencies: ["3891DDECC06761D2"]
+			description: ["Use a hex focus on cobbled deepslate to turn it into a ritual table"]
 			id: "04E5F3F5827166ED"
 			subtitle: "Flick and swish"
 			tasks: [{
