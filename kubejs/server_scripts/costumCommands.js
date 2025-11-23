@@ -3,10 +3,16 @@ ServerEvents.commandRegistry((event) => {
   const cmds = event.commands;
   const args = event.arguments;
 
+  /**
+   *
+   * @param {Internal.CommandContext<Internal.CommandSourceStack>} ctx
+   * @returns {Internal.ServerPlayer?}
+   */
   function getPlayer(ctx) {
     try {
       return ctx.getSource().getPlayer();
     } catch (e) {
+      console.log(`Failed getting player ${e}`);
       return null;
     }
   }
@@ -15,7 +21,6 @@ ServerEvents.commandRegistry((event) => {
     try {
       src.sendFailure(Component.literal(text));
     } catch (e) {
-      // fallback
       console.log("sendFailure failure: " + text);
     }
   }
@@ -32,6 +37,7 @@ ServerEvents.commandRegistry((event) => {
     try {
       return player.getAttribute(attributeId);
     } catch (e) {
+      console.log("GetAttribute failure: " + e);
       return null;
     }
   }
@@ -97,19 +103,24 @@ ServerEvents.commandRegistry((event) => {
     }
   }
 
+  /**
+   *
+   * @param {Internal.CommandContext<Internal.CommandSourceStack>} ctx
+   * @param {Internal.AttributeModifier$Operation_} operation
+   * @returns {void}
+   */
   function handleAdd(ctx, operation) {
     const src = ctx.getSource();
     const player = getPlayer(ctx);
+    player.getAttribute().addPermanentModifier();
     if (!player) {
       sendFailure(src, "You must be a player to run this command.");
-      return 0;
     }
 
     const attributeId = args.STRING.getResult(ctx, "attribute");
     const value = args.DOUBLE.getResult(ctx, "value");
     if (value === undefined || value === null || isNaN(value)) {
       sendFailure(src, "Invalid value.");
-      return 0;
     }
     const amount = Number(value);
 
@@ -122,13 +133,11 @@ ServerEvents.commandRegistry((event) => {
         src,
         "Attribute " + attributeId + " not present on this entity."
       );
-      return 0;
     }
 
     const ok = addModifier(player, attributeId, modId, amount, operation);
     if (!ok) {
       sendFailure(src, "Failed to add modifier.");
-      return 0;
     }
 
     // store persistently
@@ -147,7 +156,6 @@ ServerEvents.commandRegistry((event) => {
         ") on " +
         attributeId
     );
-    return 1;
   }
 
   function handleRemove(ctx) {
@@ -270,7 +278,6 @@ ServerEvents.commandRegistry((event) => {
   }
 
   // register commands
-
   // /addmod <attribute> <value> <operation>
   event.register(
     cmds
