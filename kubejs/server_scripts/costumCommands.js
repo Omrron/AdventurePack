@@ -2,6 +2,49 @@
 ServerEvents.commandRegistry((event) => {
   const cmds = event.commands;
   const args = event.arguments;
+  const ForgeRegistries = Java.loadClass(
+    "net.minecraftforge.registries.ForgeRegistries"
+  );
+  const AttributeModifier = Java.loadClass(
+    "net.minecraft.world.entity.ai.attributes.AttributeModifier"
+  );
+  const Uuid = Java.loadClass("java.util.UUID");
+
+  // Define the list of all IDs once at script startup
+  const ALL_ATTRIBUTE_IDS = getAllAttributeIds();
+
+  // Create the suggestion handler
+  /**
+   *  Gives full attribute list in commands suggestions
+   * @param {Internal.CommandContext<Internal.CommandSourceStack>} ctx
+   * @param {Internal.SuggestionsBuilder} builder
+   * @returns {Internal.CompletableFuture<Internal.Suggestions>}
+   */
+  const attributeSuggestionHandler = (ctx, builder) => {
+    // Get the part of the attribute ID the player has already typed (e.g., "mine")
+    const typedInput = builder.getRemaining().toLowerCase();
+
+    ALL_ATTRIBUTE_IDS.forEach((attrId) => {
+      // Only suggest attributes that start with the typed input for filtering
+      if (attrId.toLowerCase().startsWith(typedInput)) {
+        builder.suggest(attrId);
+      }
+    });
+
+    return builder.buildFuture();
+  };
+
+  /**
+   * Gets a list of all registered attribute IDs (ResourceLocation strings).
+   * @returns {string[]}
+   */
+  function getAllAttributeIds() {
+    // BuiltInRegistries.ATTRIBUTE is the correct registry for attributes
+    return ForgeRegistries.ATTRIBUTES.getKeys()
+      .stream()
+      .map((key) => key.toString())
+      .toList();
+  }
 
   /**
    *
@@ -17,6 +60,11 @@ ServerEvents.commandRegistry((event) => {
     }
   }
 
+  /**
+   *
+   * @param {Internal.CommandSourceStack} src
+   * @param {string} text
+   */
   function sendFailure(src, text) {
     try {
       src.sendFailure(Component.literal(text));
@@ -25,6 +73,11 @@ ServerEvents.commandRegistry((event) => {
     }
   }
 
+  /**
+   *
+   * @param {Internal.CommandSourceStack} src
+   * @param {string} text
+   */
   function sendSuccess(src, text) {
     try {
       src.sendSuccess(Component.literal(text), false);
@@ -33,6 +86,12 @@ ServerEvents.commandRegistry((event) => {
     }
   }
 
+  /**
+   *
+   * @param {Internal.ServerPlayer} player
+   * @param {Internal.Attribute_} attributeId
+   * @returns {Internal.AttributeInstance?}
+   */
   function safeGetAttributeInstance(player, attributeId) {
     try {
       return player.getAttribute(attributeId);
@@ -42,10 +101,19 @@ ServerEvents.commandRegistry((event) => {
     }
   }
 
+  /**
+   *
+   * @param {Internal.ServerPlayer} player
+   * @param {Internal.Attribute_} attributeId
+   * @param {string} modId
+   * @param {number} amount
+   * @param {Internal.AttributeModifier$Operation_} operation
+   * @returns
+   */
   function addModifier(player, attributeId, modId, amount, operation) {
     // remove existing if any
     try {
-      player.removeAttributeModifier(attributeId, modId);
+      player.removeAttribute(attributeId, modId);
     } catch (e) {}
     try {
       player.modifyAttribute(attributeId, modId, amount, operation);
@@ -55,6 +123,13 @@ ServerEvents.commandRegistry((event) => {
     }
   }
 
+  /**
+   *
+   * @param {Internal.ServerPlayer} player
+   * @param {Internal.Attribute_} attributeId
+   * @param {string} modId
+   * @returns
+   */
   function removeModifier(player, attributeId, modId) {
     try {
       // Get the attribute instance; this is where modifiers live
@@ -80,6 +155,12 @@ ServerEvents.commandRegistry((event) => {
     }
   }
 
+  /**
+   *
+   * @param {Internal.ServerPlayer} player
+   * @param {Internal.Attribute_} attributeId
+   * @returns {any[]}
+   */
   function loadStored(player, attributeId) {
     var loadedKey = "mods_" + attributeId;
     if (!player || !player.persistentData) return [];
@@ -94,6 +175,12 @@ ServerEvents.commandRegistry((event) => {
     return [];
   }
 
+  /**
+   *
+   * @param {Internal.ServerPlayer} player
+   * @param {Internal.Attribute_} attributeId
+   * @param {any[]} arr
+   */
   function saveStored(player, attributeId, arr) {
     try {
       var savedKey = "mods_" + attributeId;
@@ -106,26 +193,32 @@ ServerEvents.commandRegistry((event) => {
   /**
    *
    * @param {Internal.CommandContext<Internal.CommandSourceStack>} ctx
+   * @param {string} attributeId
+   * @param {number} amount
    * @param {Internal.AttributeModifier$Operation_} operation
    * @returns {void}
    */
-  function handleAdd(ctx, operation) {
+  function handleAdd(ctx, attributeId, amount, operation) {
     const src = ctx.getSource();
     const player = getPlayer(ctx);
-    player.getAttribute().addPermanentModifier();
     if (!player) {
       sendFailure(src, "You must be a player to run this command.");
+      return 1;
+    }
+    if (!ALL_ATTRIBUTE_IDS.contains(String(attributeId))) {
+      sendFailure(src, `Unrecognized attribute ${attributeId}`);
+      return 1;
     }
 
-    const attributeId = args.STRING.getResult(ctx, "attribute");
-    const value = args.DOUBLE.getResult(ctx, "value");
-    if (value === undefined || value === null || isNaN(value)) {
-      sendFailure(src, "Invalid value.");
-    }
-    const amount = Number(value);
+    const modId = Uuid.randomUUID();
+    const newAttribute = new AttributeModifier(
+      modId,
+      attributeId,
+      amount,
+      operation
+    );
 
-    // generate mod ID
-    const modId = generateUuid();
+    player.getAttribute(attributeId).addPermanentModifier(newAttribute);
 
     const inst = safeGetAttributeInstance(player, attributeId);
     if (!inst) {
@@ -135,15 +228,10 @@ ServerEvents.commandRegistry((event) => {
       );
     }
 
-    const ok = addModifier(player, attributeId, modId, amount, operation);
-    if (!ok) {
-      sendFailure(src, "Failed to add modifier.");
-    }
-
-    // store persistently
-    var stored = loadStored(player, attributeId);
-    stored.push({ id: modId, amount: amount, operation: operation });
-    saveStored(player, attributeId, stored);
+    // // store persistently
+    // var stored = loadStored(player, attributeId);
+    // stored.push({ id: modId, amount: amount, operation: operation });
+    // saveStored(player, attributeId, stored);
 
     sendSuccess(
       src,
@@ -156,6 +244,8 @@ ServerEvents.commandRegistry((event) => {
         ") on " +
         attributeId
     );
+
+    return 0;
   }
 
   function handleRemove(ctx) {
@@ -280,21 +370,62 @@ ServerEvents.commandRegistry((event) => {
   // register commands
   // /addmod <attribute> <value> <operation>
   event.register(
+    cmds.literal("addmod").then(
+      cmds
+        .argument("attribute", args.RESOURCE_LOCATION.create(event))
+        .suggests(attributeSuggestionHandler)
+        .then(
+          cmds.argument("value", args.DOUBLE.create(event)).then(
+            cmds
+              .argument("operation", args.STRING.create(event))
+              .suggests((ctx, builder) => {
+                builder.suggest("addition");
+                builder.suggest("multiply_total");
+                builder.suggest("multiply_base");
+                return builder.buildFuture();
+              })
+              .executes((ctx) =>
+                handleAdd(
+                  ctx,
+                  args.RESOURCE_LOCATION.getResult(ctx, "attribute"),
+                  args.DOUBLE.getResult(ctx, "value"),
+                  args.STRING.getResult(ctx, "operation")
+                )
+              )
+          )
+        )
+    )
+  );
+
+  function handleGetAllAttributes(player) {
+    player.sendSystemMessage(`${ALL_ATTRIBUTE_IDS}`);
+    return 0;
+  }
+
+  function handleCheckAttributeExisits(player, atr) {
+    player.sendSystemMessage(
+      `${ALL_ATTRIBUTE_IDS.filter((_) => _ === String(atr))}`
+    );
+    return 0;
+  }
+
+  event.register(
     cmds
-      .literal("addmod")
+      .literal("viewAllAttributes")
+      .executes((ctx) => handleGetAllAttributes(getPlayer(ctx)))
+  );
+
+  event.register(
+    cmds
+      .literal("checkAttributeExists")
       .then(
         cmds
-          .argument("attribute", args.STRING.create(event))
-          .then(
-            cmds
-              .argument("value", args.DOUBLE.create(event))
-              .then(
-                cmds
-                  .argument("operation", args.STRING.create(event))
-                  .executes((ctx) =>
-                    handleAdd(ctx, args.STRING.getResult(ctx, "operation"))
-                  )
-              )
+          .argument("attribute", args.RESOURCE_LOCATION.create(event))
+          .executes((ctx) =>
+            handleCheckAttributeExisits(
+              getPlayer(ctx),
+              args.RESOURCE_LOCATION.getResult(ctx, "attribute")
+            )
           )
       )
   );
