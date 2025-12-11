@@ -55,7 +55,7 @@ EntityEvents.spawned((event) => {
       );
     });
 
-    const playerCount = players.length + 1;
+    const playerCount = players.length;
 
     // --- DEFENSIVE CHECK: Skip boost if 1 or 0 players are present ---
     if (playerCount <= 1) {
@@ -86,7 +86,6 @@ EntityEvents.spawned((event) => {
 
     // 3. Calculate Multiplier (Runs ONLY if playerCount >= 2)
     let extraPlayers = playerCount - 1; // Boost applies only to extra players
-    console.log(extraPlayers);
 
     // subtracting 1 because a 0.5 modiffier multiplies by 1.5
     let healthMultiplier = extraPlayers * (mob.healthBoost - 1);
@@ -99,7 +98,6 @@ EntityEvents.spawned((event) => {
     let healthAttr = spawningEntity
       .getAttributes()
       .getInstance("minecraft:generic.max_health");
-    console.log(healthAttr);
     if (healthAttr) {
       // Remove previous instances of our modifier
       healthAttr.removeModifier(HEALTH_MODIFIER_UUID);
@@ -136,10 +134,10 @@ EntityEvents.spawned((event) => {
     }
 
     // Optional log for debugging
-    console.info(
-      `[MobScaler] ${spawningEntity.type.toString()} buffed for ${playerCount} players. Health: ${(
-        healthMultiplier + 1
-      ).toFixed(2)}x Damage: ${(1 + damageMultiplier).toFixed(2)}x`
-    );
+    // console.info(
+    //   `[MobScaler] ${spawningEntity.type.toString()} buffed for ${playerCount} players. Health: ${(
+    //     healthMultiplier + 1
+    //   ).toFixed(2)}x Damage: ${(1 + damageMultiplier).toFixed(2)}x`
+    // );
   });
 });
