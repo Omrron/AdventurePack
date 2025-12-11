@@ -20,6 +20,11 @@
 	quests: [
 		{
 			dependencies: ["78A7AFD85B40012E"]
+			description: [
+				"Achieve Tier 2 of mana and artifice"
+				""
+				"consult the Oculus for what you need to do"
+			]
 			id: "5FADF3D9EE993E99"
 			tasks: [{
 				advancement: "mna:tier_1/advance_tier_2"

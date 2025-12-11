@@ -707,15 +707,10 @@
 			dependencies: ["38432FCD429DCDC2"]
 			id: "47434FCDBF2F6CA0"
 			tasks: [{
-				id: "6C0023C2D421A893"
+				id: "4D769A3C5BFE8688"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "hexalia:stone_dagger"
+					id: "hexalia:athame"
 					tag: {
 						Damage: 0
 					}
@@ -746,6 +741,7 @@
 		}
 		{
 			dependencies: ["47434FCDBF2F6CA0"]
+			description: ["sneak-right-click on with the athame on wooden planks to turn them into a ritual barzier"]
 			id: "57C05E36834CDD8A"
 			tasks: [{
 				id: "3901FE5A968782A2"

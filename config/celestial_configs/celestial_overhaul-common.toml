@@ -32,6 +32,10 @@
 	#A value of -1 disables this function
 	#Range: -1.0 ~ 1.0
 	protectionEnchantmentTweak = 0.96
+	#Weakness effect damage reduce per level
+	#A value of -1 disables this function
+	#Range: -1.0 ~ 10.0
+	weaknessEffectDamageReduce = -1.0
 
 [max_health_based_scaling]
 	#All damage scaling applies to player only
@@ -91,4 +95,9 @@
 	#A value of -1 disables this function
 	#Range: -1.0 ~ 1.0
 	fullFoodLevelHealTweak = 0.05
+	#Entities are bound by this value when they healed
+	#newHealing = maxHealth * factor
+	#A value of -1 disables this function
+	#Range: -1.0 ~ 1.7976931348623157E308
+	maxHealAmountTweak = -1.0
 
