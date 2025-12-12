@@ -5,16 +5,16 @@
 	group: "06D39EEDC696AD5A"
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
-	icon: {
-		Count: 1
-		ForgeCaps: {
-			"celestisynth:celestisynthitemstackcapabilities": {
-				cs.aquaSkin: 0
-			}
-		}
-		id: "soulsweapons:lord_soul_day_stalker"
-	}
+	icon: "soulsweapons:lord_soul_day_stalker"
 	id: "66C622F66EC929F3"
+	images: [{
+		height: 5.0d
+		image: "adventure:textures/quests/tree_farm.png"
+		rotation: 0.0d
+		width: 7.0d
+		x: 12.5d
+		y: -2.0d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -38,6 +38,11 @@
 		}
 		{
 			dependencies: ["5FADF3D9EE993E99"]
+			description: [
+				"now that your in tier two and can make runes of marking, its time to show you the true power of constructs."
+				""
+				"for this lesson, were going to be making a wood farm!"
+			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "6A7DFC8D2922694A"
@@ -51,7 +56,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6A7DFC8D2922694A"]
+			dependencies: ["774B073FDB57C14A"]
+			description: [
+				"for the wood farm, a simple golem is enough:"
+				"all wickerwood components,"
+				"a simple wickerwood head, legs, a grabber arm for picking up items and taking them in and out of inventories, and an axe arm for cutting down trees."
+				"i strongly recommend to make the torso a storage torso for greater efficiency"
+			]
 			id: "435D4D32BDA3479C"
 			tasks: [
 				{
@@ -122,7 +133,7 @@
 			]
 			title: "my first golem"
 			x: 3.5d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["435D4D32BDA3479C"]
@@ -167,6 +178,13 @@
 				"0AA09BA1D1CE4B7D"
 				"4965855E3923637D"
 			]
+			description: [
+				"Runes of marking are used A LOT in automation, and require tier 2 to craft. That's why we waited so long!"
+				"You need them to mark your farms borders and inventory."
+				"To mark a spot, right click it with an unset rune of marking."
+				""
+				"For the borders of the farm, you're gonna want to mark the floor block of one corner, and a spot one block up on the wall of the oposite side, this creates a cube of the area in which we want to plant trees and gather dropped items"
+			]
 			id: "53279E76C90F67C8"
 			tasks: [{
 				id: "5676D96356FDA94A"
@@ -186,6 +204,18 @@
 		}
 		{
 			dependencies: ["53279E76C90F67C8"]
+			description: [
+				"With this you set the program of the construct."
+				"For this wood farm, you're going to want something along the lines of:"
+				""
+				"1. Take item out of inventory chest"
+				"2. Plant crop in specified area"
+				"3. Chop trees in specified area"
+				"4. Gather items in specified area"
+				"5. Place items in inventory chest"
+				""
+				"All actions should proceed to the next in both success and failure cases."
+			]
 			id: "269075F50AE33537"
 			tasks: [{
 				id: "4706DDAA75DED006"
@@ -220,6 +250,11 @@
 		}
 		{
 			dependencies: ["53279E76C90F67C8"]
+			description: [
+				"use this to command your construct!"
+				"once the program is set in the table of delegation (or lodestar for the advanced students)"
+				"command the construct to interact with the delegation station (or lodestar), this will set him to perform the program written in the station."
+			]
 			id: "480293DE44F4742A"
 			tasks: [{
 				id: "53D6FE14893FB2D7"
@@ -983,6 +1018,22 @@
 			}]
 			x: -25.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["6A7DFC8D2922694A"]
+			description: [
+				"your gonna need to clear out some space for your wood farm to well.... grow wood!"
+				""
+				"i recommend leaving a 2 block wide permieter around the area where the trees are planted made of stone or some other block you cant plant trees on. so that items from leaves at the very edges of the trees still fall within your farm"
+			]
+			id: "774B073FDB57C14A"
+			tasks: [{
+				id: "754EECF544DB3223"
+				title: "clear an area for the farm"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -1.5d
 		}
 	]
 	title: "chapter 2: Heroic Spark"

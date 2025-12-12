@@ -78,18 +78,11 @@
 		}
 		{
 			dependencies: ["3F4020308A2F4A6E"]
+			description: ["for storing your brews"]
 			id: "28950A2791B4A5D8"
 			tasks: [{
-				id: "0C72B2BFC1FDC488"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "hexalia:brew_shelf"
-				}
+				id: "1BBA7EEA7F1F4961"
+				item: "hexalia:shelf"
 				type: "item"
 			}]
 			x: -0.5d
@@ -366,25 +359,6 @@
 		}
 		{
 			dependencies: ["1F1CDF59A8E09CF2"]
-			id: "58B1FBD2F0AA1278"
-			tasks: [{
-				id: "31862E7DFA793E4D"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "hexalia:moon_berries"
-				}
-				type: "item"
-			}]
-			x: -9.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["1F1CDF59A8E09CF2"]
 			id: "2301479A2E045703"
 			tasks: [{
 				id: "4561FA6569A749B2"
@@ -547,65 +521,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
+			x: -4.5d
 			y: 6.0d
-		}
-		{
-			dependencies: ["6F7CD6199C29AE51"]
-			id: "65440C49253AC0D1"
-			tasks: [{
-				id: "151A111E343C0A31"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "hexalia:rain_idol"
-				}
-				type: "item"
-			}]
-			x: 3.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["6F7CD6199C29AE51"]
-			id: "45FE977C9900D889"
-			tasks: [{
-				id: "5063EEEC403F6A5A"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "hexalia:clear_idol"
-				}
-				type: "item"
-			}]
-			x: 3.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["6F7CD6199C29AE51"]
-			id: "0ACF0764C508D893"
-			tasks: [{
-				id: "7EABF28585191F52"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "hexalia:storm_idol"
-				}
-				type: "item"
-			}]
-			x: 3.0d
-			y: 7.5d
 		}
 		{
 			dependencies: ["6F83F0D0B6479D53"]
@@ -682,26 +599,6 @@
 			}]
 			x: 4.5d
 			y: 4.0d
-		}
-		{
-			dependencies: ["36EAEDCB8295A364"]
-			id: "40551D046A72EFFC"
-			tasks: [{
-				id: "53D150C21971EAF5"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "hexalia:purifying_salts"
-				}
-				type: "item"
-			}]
-			title: "status BEGONE"
-			x: 8.0d
-			y: 0.0d
 		}
 		{
 			dependencies: ["38432FCD429DCDC2"]
@@ -941,25 +838,6 @@
 		}
 		{
 			dependencies: ["2DDA8A956A4553A8"]
-			id: "397707C72C512707"
-			tasks: [{
-				id: "3E984024A964D683"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "hexalia:lunar_lily"
-				}
-				type: "item"
-			}]
-			x: -16.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["2DDA8A956A4553A8"]
 			id: "2B38D51700E722DF"
 			tasks: [{
 				id: "56D3DC97F0D08F3D"
@@ -1140,46 +1018,6 @@
 			}]
 			x: -4.5d
 			y: -1.5d
-		}
-		{
-			dependencies: ["57C05E36834CDD8A"]
-			description: [
-				"put amethyst or glowberries on a ritual brazier beneath the moon to fill them with its power."
-				""
-				"must be nighttime and have direct line of sight with the sky"
-			]
-			id: "5C2FF318BD3AF053"
-			tasks: [
-				{
-					id: "495C31B0E718ED28"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"celestisynth:celestisynthitemstackcapabilities": {
-								cs.aquaSkin: 0
-							}
-						}
-						id: "hexalia:moon_crystal"
-					}
-					type: "item"
-				}
-				{
-					id: "121962B320514582"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"celestisynth:celestisynthitemstackcapabilities": {
-								cs.aquaSkin: 0
-							}
-						}
-						id: "hexalia:moon_berries"
-					}
-					type: "item"
-				}
-			]
-			title: "Moonlight infusion"
-			x: 6.0d
-			y: -4.5d
 		}
 	]
 	title: "hexalia"
