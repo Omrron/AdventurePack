@@ -1,4 +1,14 @@
 ServerEvents.recipes((event) => {
+  event.remove({ output: "hexalia:athame" });
+  event.remove({ output: "hexalia:fire_node" });
+  event.remove({ output: "hexalia:water_node" });
+  event.remove({ output: "hexalia:earth_node" });
+  event.remove({ output: "hexalia:air_node" });
+  event.remove({ output: "mna:fall_charm" });
+  event.remove({ output: "mna:drown_charm" });
+  event.remove({ output: "mna:burn_charm" });
+  event.remove({ output: "mna:bed_charm" });
+
   event.custom({
     type: "mna:manaweaving-recipe",
     tier: 1,
@@ -36,57 +46,89 @@ ServerEvents.recipes((event) => {
      * @type {Internal.RecipeJS}
      */ {
       type: "mna:manaweaving-recipe",
-      tier: 3,
-      output: Item.of("irons_spellbooks:common_ink"),
+      tier: 1,
+      output: Item.of("mna:fall_charm"),
       items: [
-        "minecraft:ink_sac",
-        "irons_spellbooks:arcane_essence",
-        "mna:chimerite_gem",
-        "minecraft:glass_bottle",
+        "minecraft:bone",
+        "mutantmonsters:mutant_skeleton_limb",
+        "minecraft:feather",
+        "minecraft:string",
+        "minecraft:black_dye",
+        "mna:vinteum_dust",
       ],
       patterns: [
+        "mna:manaweave_patterns/triangle",
         "mna:manaweave_patterns/circle",
-        "mna:manaweave_patterns/knot",
-        "mna:manaweave_patterns/knot2",
-        "mna:manaweave_patterns/diamond",
+        "mna:manaweave_patterns/triangle",
       ],
     }
   );
-  event.custom(
-    /**
-     * @type {Internal.RecipeJS}
-     */ {
-      type: "mna:manaweaving-recipe",
-      tier: 3,
-      output: Item.of("irons_spellbooks:common_ink"),
-      quantity: 8,
-      items: [
-        "minecraft:ink_sac",
-        "irons_spellbooks:arcane_essence",
-        "minecraft:nether_star",
-        "minecraft:glass_bottle",
-      ],
-      patterns: [
-        "mna:manaweave_patterns/circle",
-        "mna:manaweave_patterns/knot",
-        "mna:manaweave_patterns/knot2",
-        "mna:manaweave_patterns/diamond",
-      ],
-    }
-  );
+
   event.custom(
     /**
      * @type {Internal.RecipeJS}
      */ {
       type: "mna:manaweaving-recipe",
       tier: 1,
-      output: Item.of("irons_spellbooks:iron_spell_book"),
-      quantity: 1,
-      items: ["minecraft:book", "minecraft:iron_ingot", "mna:vinteum_dust"],
+      output: Item.of("mna:drown_charm"),
+      items: [
+        "minecraft:sugar_cane",
+        "mutantmonsters:mutant_skeleton_limb",
+        "minecraft:feather",
+        "minecraft:string",
+        "minecraft:black_dye",
+        "mna:vinteum_dust",
+      ],
       patterns: [
         "mna:manaweave_patterns/circle",
-        "mna:manaweave_patterns/square",
+        "mna:manaweave_patterns/triangle",
         "mna:manaweave_patterns/circle",
+      ],
+    }
+  );
+
+  event.custom(
+    /**
+     * @type {Internal.RecipeJS}
+     */ {
+      type: "mna:manaweaving-recipe",
+      tier: 1,
+      output: Item.of("mna:burn_charm"),
+      items: [
+        "minecraft:coal",
+        "mutantmonsters:mutant_skeleton_limb",
+        "minecraft:feather",
+        "minecraft:string",
+        "minecraft:black_dye",
+        "mna:vinteum_dust",
+      ],
+      patterns: [
+        "mna:manaweave_patterns/slash",
+        "mna:manaweave_patterns/square",
+        "mna:manaweave_patterns/backslash",
+      ],
+    }
+  );
+
+  event.custom(
+    /**
+     * @type {Internal.RecipeJS}
+     */ {
+      type: "mna:manaweaving-recipe",
+      tier: 1,
+      output: Item.of("mna:bed_charmr"),
+      items: [
+        "mutantmonsters:mutant_skeleton_limb",
+        "minecraft:ender_pearl",
+        "minecraft:feather",
+        "minecraft:string",
+        "minecraft:black_dye",
+        "mna:purified_vinteum_dust",
+      ],
+      patterns: [
+        "mna:manaweave_patterns/triangle",
+        "mna:manaweave_patterns/square",
+        "mna:manaweave_patterns/triangle",
       ],
     }
   );
